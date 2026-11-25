@@ -1,0 +1,15 @@
+instance,method,type,iterations,improving_iterations
+swv11,PolicyB_StructureBased_v2,BB,5,2
+swv11,PolicyB_StructureBased_v2,M,2,1
+swv11,PolicyB_StructureBased_v2,TW,1,0
+swv11,PolicyB_StructureBased_v2,J,1,1
+swv11,PolicyC_Dynamic_v3,CB,5,0
+swv11,PolicyC_Dynamic_v3,TW,5,0
+swv11,PolicyC_Dynamic_v3,MA,6,0
+ta72,PolicyB_StructureBased_v2,BB,25,24
+ta72,PolicyB_StructureBased_v2,M,9,2
+ta72,PolicyB_StructureBased_v2,TW,8,1
+ta72,PolicyB_StructureBased_v2,J,8,5
+ta72,PolicyC_Dynamic_v3,CB,27,9
+ta72,PolicyC_Dynamic_v3,TW,13,0
+ta72,PolicyC_Dynamic_v3,MA,14,0

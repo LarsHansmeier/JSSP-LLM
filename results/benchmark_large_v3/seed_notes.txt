@@ -1,0 +1,43 @@
+v3 benchmark (ta21, yn1, ta42, ta62, swv13), seed 42 — results/benchmark_large_v3 — seed notes (written 2026-11-25, before the run)
+=====================================================================================================================
+
+Driver: scripts/benchmark_large_v3.jl --seed=42. It is a mechanical copy of scripts/benchmark_large_v2_seed.jl, which is
+itself a copy of scripts/benchmark_large_v2.jl; only the instances, reference values and output folders differ.
+
+Where the seed enters (one parameter, SEED[] = 42):
+1. Our methods (random, gurobi, A v2, B v2, C v3). Run by scripts/benchmark_seed.jl --worker --seed=42, the same
+   worker code as v2's scripts/benchmark_large.jl --worker, with the seed as a parameter.
+   - random_fao(...; seed): MersenneTwister(seed) for the per-iteration budget draw and for the random release
+     selection of "random"; Gurobi parameter Seed of every sub-problem.
+   - solve_model(...; seed): Gurobi parameter Seed of the full model (method gurobi).
+   Effect per method:
+     random    : budget draws, release selection, sub-problem Gurobi Seed
+     A v2, B v2: budget draws, sub-problem Gurobi Seed
+     C v3      : sub-problem Gurobi Seed only (ignores rng and the drawn budget)
+     gurobi    : Gurobi Seed of the full model only
+   The policies have no RNG of their own, and src/ is unchanged.
+2. CP-SAT: scripts/cpsat_jssp.py --seed 42 → random_seed. num_workers 1 / 8, hint and model are unchanged.
+
+Every run records the seed: seed and gurobi_Seed in run.csv for our methods, seed in cpsat_meta.csv for CP-SAT.
+The --check step requires all of them to be 42.
+With seed 42 the worker behaves exactly like v2's scripts/benchmark_large.jl worker (same code, same seed value).
+
+Does the initial solution depend on the seed?
+No. initial_schedule (MWKR) is deterministic. The exported CP-SAT hints in results/benchmark_large_v3/input/*.json
+are the same for both seeds: initial makespans ta21 2044, yn1 1005, ta42 2416, ta62 3462, swv13 4389.
+
+Other differences from v2: only the instances. All settings are identical to v2 (checked by the dry run against
+results/benchmark_large_v2/runs.csv):
+- 1200 s per run;
+- free-y range 250–4000 capped at 0.75·pairs, y_floor = min(250, cap);
+- sub-problem TimeLimit 7.5 s, Gurobi Threads 1, CP-SAT num_workers 1 / 8;
+- same run-order scheme;
+- crash safety, plus the stall check after every run (1 rerun).
+On ta21 and yn1 (20×20, 3800 pairs), the cap gives an effective free-y range of 250–2850. This is the same rule
+as in v2, not a new setting.
+
+Reference values: see reference_values.csv. JSPLIB's values are outdated for ta21, yn1 and ta42, so those come from
+optimizizer.com (accessed 2026-11-25). Note: v1 kept JSPLIB's 2018 for ta41, although optimizizer.com lists 2006.
+
+Not reproducible bit for bit even with the same seed: the time limits are wall-clock, and CP-SAT with 8 workers is
+non-deterministic.

@@ -1,0 +1,2 @@
+instance,method,stalled,runtime,start,end,total_lost_s,sleep_overlap_s,reasons
+ta31,PolicyC_Dynamic_v3,False,1200.0,2026-11-25 14:37:59,2026-11-25 14:57:59,0.5,0.0,

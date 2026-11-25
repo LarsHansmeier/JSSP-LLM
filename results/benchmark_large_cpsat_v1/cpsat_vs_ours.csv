@@ -1,0 +1,9 @@
+instance,method,best_of_our_methods,by,first_time_better
+ta41,CPSAT_1w,2155,PolicyB_StructureBased_v2,837.8627389906922
+ta61,CPSAT_1w,2990,PolicyC_Dynamic_v3,
+swv12,CPSAT_1w,3466,PolicyB_StructureBased_v2,20.90884268685913
+ta71,CPSAT_1w,5726,PolicyB_StructureBased_v2,
+ta41,CPSAT_8w,2155,PolicyB_StructureBased_v2,17.711301282424927
+ta61,CPSAT_8w,2990,PolicyC_Dynamic_v3,53.26958409049988
+swv12,CPSAT_8w,3466,PolicyB_StructureBased_v2,9.903161929656983
+ta71,CPSAT_8w,5726,PolicyB_StructureBased_v2,94.06795577961732

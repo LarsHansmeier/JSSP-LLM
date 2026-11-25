@@ -1,0 +1,18 @@
+2026-11-24 21:23:16  queue started (pid 12105), julia: /Users/larshansmeier/.julia/juliaup/julia-1.13.4+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/bin/julia
+2026-11-24 21:23:16  STATUS: WAITING for benchmark_large_v2 (pid 7204)
+2026-11-24 21:23:16  waiting for v2 driver pid 7204 (poll every 60 s)
+2026-11-24 23:30:18  v2 driver pid 7204 has ended
+2026-11-24 23:30:18  benchmark_large_v2: 28 / 28 runs with DONE
+2026-11-24 23:30:18  v2 aggregation already complete (runs.csv has 28 rows, combined summary up to date)
+2026-11-24 23:30:18  STATUS: RUNNING — step 2: smoke test (ta41, 60 s per method, seed 43)
+2026-11-24 23:30:18  smoke test → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43/smoke
+2026-11-24 23:36:16  smoke driver exited with code 0
+2026-11-24 23:36:24  smoke check: CHECK OK: 5 runs, all DONE, feasible, run_check passed, free y in range, seed 43
+2026-11-24 23:36:24  STATUS: RUNNING — step 3: full seed-43 benchmark (20 runs × 20 min); see /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43/progress.csv
+2026-11-24 23:36:24  full benchmark, driver attempt 1
+2026-11-25 06:19:50  driver exited with code 0
+2026-11-25 06:19:50  aggregating (step 4)
+2026-11-25 06:20:08  full check: CHECK OK: 20 runs, all DONE, feasible, run_check passed, free y in range, seed 43
+2026-11-25 06:20:08  STATUS: RUNNING — step 5: seed comparison
+2026-11-25 06:20:15  seed comparison exited with code 0
+2026-11-25 06:20:15  STATUS: DONE — 2026-11-25 06:20:15: 20 seed-43 runs complete and checked; see seed_comparison.md

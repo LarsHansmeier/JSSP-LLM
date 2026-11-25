@@ -1,0 +1,6 @@
+# Random FaO – Diagnose für ft10
+# Spalten: iterations, share_time_limit, median_n_free_y, median_sub_time, median_setup_time, share_improved, share_accepted, time_last_improvement
+seed 1: iterations=325  share_time_limit=0.0  median_n_free_y=102.0  median_sub_time=0.0116  median_setup_time=0.0  share_improved=0.0338  share_accepted=0.0769  time_last_improvement=0.7506
+seed 2: iterations=327  share_time_limit=0.0  median_n_free_y=117.0  median_sub_time=0.0124  median_setup_time=0.0  share_improved=0.0398  share_accepted=0.1101  time_last_improvement=0.5099
+seed 3: iterations=313  share_time_limit=0.0  median_n_free_y=110.0  median_sub_time=0.0121  median_setup_time=0.0  share_improved=0.0415  share_accepted=0.0639  time_last_improvement=2.4378
+mittel:  iterations=321.6667  share_time_limit=0.0  median_n_free_y=109.6667  median_sub_time=0.012  median_setup_time=0.0  share_improved=0.0384  share_accepted=0.0836  time_last_improvement=1.2328

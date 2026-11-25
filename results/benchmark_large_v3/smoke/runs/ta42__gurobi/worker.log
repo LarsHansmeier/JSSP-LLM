@@ -1,0 +1,4 @@
+Set parameter Username
+Set parameter LicenseID to value 2885084
+Academic license - for non-commercial use only - expires 2027-11-16
+ta42 gurobi (seed 42): incumbent 2252, runtime 60.0 s, feasible true, peak RSS 1392.8 MB

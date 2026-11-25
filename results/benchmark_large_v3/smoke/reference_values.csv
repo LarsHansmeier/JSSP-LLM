@@ -1,0 +1,2 @@
+instance,reference,lower_bound,source,proven_optimal
+ta42,1939,1887,"optimizizer.com/TA.php (LB 1887 [RL2024], UB 1939 [PMAEDC2019]; accessed 2026-11-25); JSPLIB metadata outdated (LB 1867, UB 1956)",false

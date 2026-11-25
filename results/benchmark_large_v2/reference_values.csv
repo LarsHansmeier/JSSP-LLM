@@ -1,0 +1,5 @@
+instance,reference,source,proven_optimal
+swv11,2991,JSPLIB metadata (best known upper bound; LB 2983),false
+ta31,1764,JSPLIB metadata (optimum),true
+ta51,2760,JSPLIB metadata (optimum),true
+ta72,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",true

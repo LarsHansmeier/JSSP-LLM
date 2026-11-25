@@ -1,0 +1,6 @@
+# Random FaO – Diagnose für ft06
+# Spalten: iterations, share_time_limit, median_n_free_y, median_sub_time, median_setup_time, share_improved, share_accepted, time_last_improvement
+seed 1: iterations=7613  share_time_limit=0.0  median_n_free_y=20.0  median_sub_time=0.0007  median_setup_time=0.0  share_improved=0.0004  share_accepted=0.0037  time_last_improvement=0.012
+seed 2: iterations=7203  share_time_limit=0.0  median_n_free_y=21.0  median_sub_time=0.0007  median_setup_time=0.0  share_improved=0.0004  share_accepted=0.0061  time_last_improvement=0.0226
+seed 3: iterations=7276  share_time_limit=0.0  median_n_free_y=20.0  median_sub_time=0.0007  median_setup_time=0.0  share_improved=0.0004  share_accepted=0.0047  time_last_improvement=0.0085
+mittel:  iterations=7364.0  share_time_limit=0.0  median_n_free_y=20.3333  median_sub_time=0.0007  median_setup_time=0.0  share_improved=0.0004  share_accepted=0.0048  time_last_improvement=0.0143

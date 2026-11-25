@@ -1,0 +1,8 @@
+instance,method,stalled,runtime,start,end,total_lost_s,sleep_overlap_s,reasons
+ta42,CPSAT_1w,False,60.0,2026-11-25 20:28:50,2026-11-25 20:29:50,0.0,0.0,
+ta42,CPSAT_8w,False,60.0,2026-11-25 20:29:51,2026-11-25 20:30:51,0.0,0.0,
+ta42,PolicyA_ScoreBased_fill,False,60.0,2026-11-25 20:25:25,2026-11-25 20:26:25,0.0,0.0,
+ta42,PolicyB_StructureBased_v2,False,60.0,2026-11-25 20:26:36,2026-11-25 20:27:36,0.0,0.0,
+ta42,PolicyC_Dynamic_v3,False,60.0,2026-11-25 20:27:46,2026-11-25 20:28:46,0.0,0.0,
+ta42,gurobi,False,60.0,2026-11-25 20:24:15,2026-11-25 20:25:15,0.0,0.0,
+ta42,random,False,60.0,2026-11-25 20:23:06,2026-11-25 20:24:06,0.0,0.0,

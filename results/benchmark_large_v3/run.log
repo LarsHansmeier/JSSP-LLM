@@ -1,0 +1,19 @@
+== started by queue_v3.sh 2026-11-25T20:31:05 (attempt 1)
+exported ta21 (20×20, initial makespan 2044) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3/input/ta21.json
+exported yn1 (20×20, initial makespan 1005) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3/input/yn1.json
+exported ta42 (30×20, initial makespan 2416) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3/input/ta42.json
+exported ta62 (50×20, initial makespan 3462) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3/input/ta62.json
+exported swv13 (50×10, initial makespan 4389) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3/input/swv13.json
+2026-11-25T20:31:14.559  ta21 random: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3: 1 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan_20261125T205125.csv, stall_runs_20261125T205125.csv
+STALLED_RUNS=
+2026-11-25T20:51:25.394  ta21 random: done
+2026-11-25T20:51:25.395  yn1 gurobi: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3: 1 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan_20261125T211134.csv, stall_runs_20261125T211134.csv
+STALLED_RUNS=
+2026-11-25T21:11:34.487  yn1 gurobi: done
+2026-11-25T21:11:34.487  ta42 PolicyA_ScoreBased_fill: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v3: 1 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan_20261125T213144.csv, stall_runs_20261125T213144.csv
+STALLED_RUNS=
+2026-11-25T21:31:44.805  ta42 PolicyA_ScoreBased_fill: done
+2026-11-25T21:31:44.805  ta62 PolicyB_StructureBased_v2: started

@@ -1,0 +1,17 @@
+instance,method,iteration,type,candidate,k,budget,n_released,n_critical,n_blocks,n_free_y,n_tabu,n_border_ops,bb_candidate_index,improved
+ta41,PolicyB_StructureBased_v2,1,BB,borders from block 1 (of 5),114,3314,138,46,5,3293,0,18,,true
+ta41,PolicyB_StructureBased_v2,2,M,machine 2,133,3862,259,41,4,3860,0,,,true
+ta41,PolicyB_StructureBased_v2,3,BB,borders from block 1 (of 4),34,1002,42,42,4,999,0,16,,true
+ta41,PolicyB_StructureBased_v2,4,TW,window 441 (r = 1694),114,3328,128,10,5,3319,0,,,false
+ta41,PolicyB_StructureBased_v2,5,BB,borders from block 1 (of 5),112,3272,138,44,5,3248,1,17,,true
+ta41,PolicyB_StructureBased_v2,6,J,job 7,53,1554,55,8,7,1545,0,,,true
+ta41,PolicyB_StructureBased_v2,7,BB,borders from block 1 (of 4),29,845,36,36,4,839,0,15,,false
+ta41,PolicyB_StructureBased_v2,8,M,machine 2,47,1388,92,36,4,1362,1,,,false
+ta41,PolicyB_StructureBased_v2,9,BB,borders from block 1 (of 13),129,3757,155,81,13,3744,2,42,,true
+ta41,PolicyB_StructureBased_v2,10,TW,window 63 (r = 193),131,3807,149,19,6,3788,0,,,true
+ta41,PolicyB_StructureBased_v2,11,BB,borders from block 1 (of 8),46,1359,52,52,8,1347,0,29,,true
+ta41,PolicyB_StructureBased_v2,12,J,job 18,33,973,34,0,7,972,0,,,false
+ta41,PolicyB_StructureBased_v2,13,BB,borders from block 1 (of 7),36,1056,42,42,7,1052,1,24,,true
+ta41,PolicyB_StructureBased_v2,14,M,machine 2,27,783,46,32,9,779,0,,,true
+ta41,PolicyB_StructureBased_v2,15,BB,borders from block 1 (of 6),31,899,33,33,6,880,0,22,,true
+ta41,PolicyB_StructureBased_v2,16,TW,window 47 (r = 138),89,2600,97,17,17,2597,0,,,true

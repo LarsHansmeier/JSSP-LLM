@@ -1,0 +1,12 @@
+iteration,type,candidate,k,budget,n_released,n_critical,n_blocks,n_free_y,n_tabu,n_border_ops,bb_candidate_index,improved
+1,BB,borders from block 1 (of 5),114,3314,148,37,5,3311,0,17,,true
+2,M,machine 1,133,3862,259,34,3,3860,0,,,true
+3,BB,borders from block 1 (of 4),34,1002,39,34,4,989,0,14,,true
+4,TW,window 2 (r = 0),114,3328,133,14,4,3314,0,,,false
+5,BB,borders from block 1 (of 4),112,3272,148,39,4,3259,1,14,,true
+6,J,job 5,53,1554,56,1,4,1546,0,,,false
+7,BB,borders from block 1 (of 4),29,845,35,33,4,842,1,14,,true
+8,M,machine 7,47,1388,92,45,9,1362,0,,,false
+9,BB,borders from block 1 (of 9),129,3757,173,89,9,3745,1,34,,true
+10,TW,window 170 (r = 696),131,3807,159,13,2,3807,0,,,false
+11,BB,borders from block 1 (of 2),46,1359,60,36,2,1348,1,8,,false

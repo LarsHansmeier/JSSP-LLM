@@ -1,0 +1,25 @@
+exported ta41 (30×20, initial makespan 2620) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_cpsat_v1/input/ta41.json
+exported ta61 (50×20, initial makespan 3343) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_cpsat_v1/input/ta61.json
+exported swv12 (50×10, initial makespan 4327) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_cpsat_v1/input/swv12.json
+exported ta71 (100×20, initial makespan 6036) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_cpsat_v1/input/ta71.json
+2026-11-24T11:33:27.449  ta41 CPSAT_1w: done
+2026-11-24T11:53:27.808  ta61 CPSAT_1w: done
+2026-11-24T12:13:28.188  swv12 CPSAT_1w: done
+2026-11-24T12:33:28.543  ta71 CPSAT_1w: done
+2026-11-24T12:53:28.911  ta41 CPSAT_8w: done
+2026-11-24T13:13:29.349  ta61 CPSAT_8w: done
+2026-11-24T13:33:29.754  swv12 CPSAT_8w: done
+2026-11-24T13:43:55.684  ta71 CPSAT_8w: done
+aggregated 8 CP-SAT runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_cpsat_v1
+8×10 DataFrame
+ Row │ instance  method    incumbent  makespan_julia  primal_gap  final_bound  cpsat_status  runtime   feasible  run_check
+     │ String    String    Int64      Int64           Float64     Int64        String        Float64   Bool      String
+─────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ ta41      CPSAT_1w       2154            2154  0.0673935          1851  FEASIBLE      1200.02       true  full
+   2 │ ta61      CPSAT_1w       3227            3227  0.125174           2868  FEASIBLE      1200.01       true  full
+   3 │ swv12     CPSAT_1w       3199            3199  0.0652681          2955  FEASIBLE      1200.03       true  full
+   4 │ ta71      CPSAT_1w       6032            6032  0.103953           5464  FEASIBLE      1200.03       true  full
+   5 │ ta41      CPSAT_8w       2080            2080  0.0307235          1892  FEASIBLE      1200.03       true  full
+   6 │ ta61      CPSAT_8w       2885            2885  0.00592748         2868  FEASIBLE      1200.11       true  full
+   7 │ swv12     CPSAT_8w       3135            3135  0.043956           2972  FEASIBLE      1200.07       true  full
+   8 │ ta71      CPSAT_8w       5464            5464  0.0                5464  OPTIMAL        625.577      true  cpsat optimal

@@ -1,0 +1,275 @@
+exported swv11 (50×10, initial makespan 4257) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/swv11.json
+exported ta31 (30×15, initial makespan 2134) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/ta31.json
+exported ta51 (50×15, initial makespan 3435) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/ta51.json
+exported ta72 (100×20, initial makespan 5583) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/ta72.json
+2026-11-24T14:37:25.066  swv11 random: started
+2026-11-24T14:57:35.353  swv11 random: done
+2026-11-24T14:57:35.359  ta31 gurobi: started
+2026-11-24T15:17:44.380  ta31 gurobi: done
+2026-11-24T15:17:44.393  ta51 PolicyA_ScoreBased_fill: started
+2026-11-24T15:40:08.140  ta51 PolicyA_ScoreBased_fill: done
+2026-11-24T15:40:08.147  ta72 PolicyB_StructureBased_v2: started
+2026-11-24T16:00:19.701  ta72 PolicyB_StructureBased_v2: done
+2026-11-24T16:00:19.712  swv11 gurobi: started
+2026-11-24T16:20:28.686  swv11 gurobi: done
+2026-11-24T16:20:28.687  ta31 PolicyA_ScoreBased_fill: started
+2026-11-24T16:40:38.733  ta31 PolicyA_ScoreBased_fill: done
+2026-11-24T16:40:38.733  ta51 PolicyB_StructureBased_v2: started
+2026-11-24T17:00:49.221  ta51 PolicyB_StructureBased_v2: done
+2026-11-24T17:00:49.236  ta72 PolicyC_Dynamic_v3: started
+2026-11-24T17:21:01.083  ta72 PolicyC_Dynamic_v3: done
+2026-11-24T17:21:01.090  swv11 PolicyA_ScoreBased_fill: started
+2026-11-24T17:41:11.435  swv11 PolicyA_ScoreBased_fill: done
+2026-11-24T17:41:11.447  ta31 PolicyB_StructureBased_v2: started
+2026-11-24T18:01:22.288  ta31 PolicyB_StructureBased_v2: done
+2026-11-24T18:01:22.289  ta51 PolicyC_Dynamic_v3: started
+2026-11-24T18:21:33.704  ta51 PolicyC_Dynamic_v3: done
+2026-11-24T18:21:33.705  ta72 random: started
+2026-11-24T18:41:43.705  ta72 random: done
+2026-11-24T18:41:43.705  swv11 PolicyB_StructureBased_v2: started
+2026-11-24T19:01:54.046  swv11 PolicyB_StructureBased_v2: done
+2026-11-24T19:01:54.047  ta31 PolicyC_Dynamic_v3: started
+2026-11-24T19:22:05.378  ta31 PolicyC_Dynamic_v3: done
+2026-11-24T19:22:05.379  ta51 random: started
+2026-11-24T19:42:15.134  ta51 random: done
+2026-11-24T19:42:15.135  ta72 gurobi: started
+2026-11-24T20:02:24.034  ta72 gurobi: done
+2026-11-24T20:02:24.035  swv11 PolicyC_Dynamic_v3: started
+2026-11-24T20:22:35.282  swv11 PolicyC_Dynamic_v3: done
+2026-11-24T20:22:35.285  ta31 random: started
+2026-11-24T20:42:45.499  ta31 random: done
+2026-11-24T20:42:45.501  ta51 gurobi: started
+2026-11-24T21:02:54.307  ta51 gurobi: done
+2026-11-24T21:02:54.307  ta72 PolicyA_ScoreBased_fill: started
+2026-11-24T21:23:04.358  ta72 PolicyA_ScoreBased_fill: done
+2026-11-24T21:23:04.359  swv11 CPSAT_1w: started
+2026-11-24T21:43:05.288  swv11 CPSAT_1w: done
+2026-11-24T21:43:05.289  ta31 CPSAT_1w: started
+2026-11-24T22:03:05.672  ta31 CPSAT_1w: done
+2026-11-24T22:03:05.672  ta51 CPSAT_1w: started
+2026-11-24T22:23:05.997  ta51 CPSAT_1w: done
+2026-11-24T22:23:05.998  ta72 CPSAT_1w: started
+2026-11-24T22:43:06.409  ta72 CPSAT_1w: done
+2026-11-24T22:43:06.409  swv11 CPSAT_8w: started
+2026-11-24T23:03:06.913  swv11 CPSAT_8w: done
+2026-11-24T23:03:06.914  ta31 CPSAT_8w: started
+2026-11-24T23:23:07.266  ta31 CPSAT_8w: done
+2026-11-24T23:23:07.266  ta51 CPSAT_8w: started
+2026-11-24T23:24:11.242  ta51 CPSAT_8w: done
+2026-11-24T23:24:11.242  ta72 CPSAT_8w: started
+2026-11-24T23:29:54.890  ta72 CPSAT_8w: done
+aggregated 28 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2
+28×9 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  status      runtime    feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     DataStri…   Float64    Bool      Float64      String
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ swv11      random                          3916  0.309261    TIME_LIMIT  1200.0         true       1169.5  full
+   2 │ swv11      gurobi                          4139  0.383818    TIME_LIMIT  1200.0         true       1255.5  full
+   3 │ swv11      PolicyA_ScoreBased_fill         4014  0.342026    TIME_LIMIT  1200.01        true       1093.8  full
+   4 │ swv11      PolicyB_StructureBased_v2       3633  0.214644    TIME_LIMIT  1200.0         true       1255.8  full
+   5 │ swv11      PolicyC_Dynamic_v3              3668  0.226346    TIME_LIMIT  1200.0         true       1231.5  full
+   6 │ swv11      CPSAT_1w                        3143  0.0508191   FEASIBLE    1200.02        true        500.1  full
+   7 │ swv11      CPSAT_8w                        3065  0.0247409   FEASIBLE    1200.12        true       1228.1  full
+   8 │ ta31       random                          1849  0.0481859   TIME_LIMIT  1200.0         true       1095.2  full
+   9 │ ta31       gurobi                          1954  0.10771     TIME_LIMIT  1200.01        true       1086.8  full
+  10 │ ta31       PolicyA_ScoreBased_fill         1908  0.0816327   TIME_LIMIT  1200.0         true       1179.0  full
+  11 │ ta31       PolicyB_StructureBased_v2       1899  0.0765306   TIME_LIMIT  1200.01        true       1082.5  full
+  12 │ ta31       PolicyC_Dynamic_v3              1829  0.0368481   TIME_LIMIT  1200.0         true       1229.5  full
+  13 │ ta31       CPSAT_1w                        1781  0.00963719  FEASIBLE    1200.02        true        392.9  full
+  14 │ ta31       CPSAT_8w                        1768  0.00226757  FEASIBLE    1200.06        true       1030.0  full
+  15 │ ta51       random                          3174  0.15        TIME_LIMIT  1200.0         true       1252.2  full
+  16 │ ta51       gurobi                          3294  0.193478    TIME_LIMIT  1200.0         true       1154.3  full
+  17 │ ta51       PolicyA_ScoreBased_fill         3307  0.198188    TIME_LIMIT  1333.32        true       1069.0  INCOMPLETE
+  18 │ ta51       PolicyB_StructureBased_v2       2911  0.0547101   TIME_LIMIT  1200.0         true       1248.2  full
+  19 │ ta51       PolicyC_Dynamic_v3              3204  0.16087     TIME_LIMIT  1200.0         true       1239.9  full
+  20 │ ta51       CPSAT_1w                        2871  0.0402174   FEASIBLE    1200.02        true        383.7  full
+  21 │ ta51       CPSAT_8w                        2760  0.0         OPTIMAL       63.6863      true        723.6  cpsat optimal
+  22 │ ta72       random                          5425  0.0470952   TIME_LIMIT  1200.02        true       1535.5  full
+  23 │ ta72       gurobi                          5566  0.07431     TIME_LIMIT  1200.02        true       1772.8  full
+  24 │ ta72       PolicyA_ScoreBased_fill         5570  0.075082    TIME_LIMIT  1200.01        true       1398.1  full
+  25 │ ta72       PolicyB_StructureBased_v2       5433  0.0486393   TIME_LIMIT  1200.01        true       1749.5  full
+  26 │ ta72       PolicyC_Dynamic_v3              5417  0.0455511   TIME_LIMIT  1200.01        true       1420.9  full
+  27 │ ta72       CPSAT_1w                        5581  0.0772052   FEASIBLE    1200.02        true        298.9  full
+  28 │ ta72       CPSAT_8w                        5181  0.0         OPTIMAL      343.36        true       1460.4  cpsat optimal
+combined: 8 instances → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_combined
+7×6 DataFrame
+ Row │ method                     instances  mean_primal_gap  mean_primal_integral  mean_rank  n_best_of_our_five
+     │ DataStri…                  Int64      Float64          Float64               Float64    Int64?
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ random                             8        0.137475               16.3123       4.125                   0
+   2 │ gurobi                             8        0.199837               21.2842       6.375                   0
+   3 │ PolicyA_ScoreBased_fill            8        0.171511               18.8502       6.125                   0
+   4 │ PolicyB_StructureBased_v2          8        0.0902156              11.984        3.25                    5
+   5 │ PolicyC_Dynamic_v3                 8        0.110577               15.1154       3.5                     3
+   6 │ CPSAT_1w                           8        0.0674585               7.96689      3.625             missing
+   7 │ CPSAT_8w                           8        0.0134519               1.91173      1.0               missing
+== started by queue_v2_repair_seed43.sh 2026-11-25T09:26:04 (attempt 1)
+exported swv11 (50×10, initial makespan 4257) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/swv11.json
+exported ta31 (30×15, initial makespan 2134) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/ta31.json
+exported ta51 (50×15, initial makespan 3435) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/ta51.json
+exported ta72 (100×20, initial makespan 5583) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2/input/ta72.json
+2026-11-25T09:26:13.564  swv11 random: DONE earlier, skipped
+2026-11-25T09:26:13.572  ta31 gurobi: DONE earlier, skipped
+2026-11-25T09:26:13.573  ta51 PolicyA_ScoreBased_fill: started
+2026-11-25T09:46:22.899  ta51 PolicyA_ScoreBased_fill: done
+2026-11-25T09:46:22.903  ta72 PolicyB_StructureBased_v2: started
+2026-11-25T10:06:33.450  ta72 PolicyB_StructureBased_v2: done
+2026-11-25T10:06:33.450  swv11 gurobi: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta31 PolicyA_ScoreBased_fill: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta51 PolicyB_StructureBased_v2: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta72 PolicyC_Dynamic_v3: DONE earlier, skipped
+2026-11-25T10:06:33.450  swv11 PolicyA_ScoreBased_fill: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta31 PolicyB_StructureBased_v2: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta51 PolicyC_Dynamic_v3: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta72 random: DONE earlier, skipped
+2026-11-25T10:06:33.450  swv11 PolicyB_StructureBased_v2: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta31 PolicyC_Dynamic_v3: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta51 random: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta72 gurobi: DONE earlier, skipped
+2026-11-25T10:06:33.450  swv11 PolicyC_Dynamic_v3: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta31 random: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta51 gurobi: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta72 PolicyA_ScoreBased_fill: DONE earlier, skipped
+2026-11-25T10:06:33.450  swv11 CPSAT_1w: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta31 CPSAT_1w: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta51 CPSAT_1w: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta72 CPSAT_1w: DONE earlier, skipped
+2026-11-25T10:06:33.450  swv11 CPSAT_8w: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta31 CPSAT_8w: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta51 CPSAT_8w: DONE earlier, skipped
+2026-11-25T10:06:33.450  ta72 CPSAT_8w: DONE earlier, skipped
+aggregated 28 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2
+28×9 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  status      runtime    feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     DataStri…   Float64    Bool      Float64      String
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ swv11      random                          3916  0.309261    TIME_LIMIT  1200.0         true       1169.5  full
+   2 │ swv11      gurobi                          4139  0.383818    TIME_LIMIT  1200.0         true       1255.5  full
+   3 │ swv11      PolicyA_ScoreBased_fill         4014  0.342026    TIME_LIMIT  1200.01        true       1093.8  full
+   4 │ swv11      PolicyB_StructureBased_v2       3633  0.214644    TIME_LIMIT  1200.0         true       1255.8  full
+   5 │ swv11      PolicyC_Dynamic_v3              3668  0.226346    TIME_LIMIT  1200.0         true       1231.5  full
+   6 │ swv11      CPSAT_1w                        3143  0.0508191   FEASIBLE    1200.02        true        500.1  full
+   7 │ swv11      CPSAT_8w                        3065  0.0247409   FEASIBLE    1200.12        true       1228.1  full
+   8 │ ta31       random                          1849  0.0481859   TIME_LIMIT  1200.0         true       1095.2  full
+   9 │ ta31       gurobi                          1954  0.10771     TIME_LIMIT  1200.01        true       1086.8  full
+  10 │ ta31       PolicyA_ScoreBased_fill         1908  0.0816327   TIME_LIMIT  1200.0         true       1179.0  full
+  11 │ ta31       PolicyB_StructureBased_v2       1899  0.0765306   TIME_LIMIT  1200.01        true       1082.5  full
+  12 │ ta31       PolicyC_Dynamic_v3              1829  0.0368481   TIME_LIMIT  1200.0         true       1229.5  full
+  13 │ ta31       CPSAT_1w                        1781  0.00963719  FEASIBLE    1200.02        true        392.9  full
+  14 │ ta31       CPSAT_8w                        1768  0.00226757  FEASIBLE    1200.06        true       1030.0  full
+  15 │ ta51       random                          3174  0.15        TIME_LIMIT  1200.0         true       1252.2  full
+  16 │ ta51       gurobi                          3294  0.193478    TIME_LIMIT  1200.0         true       1154.3  full
+  17 │ ta51       PolicyA_ScoreBased_fill         3307  0.198188    TIME_LIMIT  1200.0         true       1166.8  full
+  18 │ ta51       PolicyB_StructureBased_v2       2911  0.0547101   TIME_LIMIT  1200.0         true       1248.2  full
+  19 │ ta51       PolicyC_Dynamic_v3              3204  0.16087     TIME_LIMIT  1200.0         true       1239.9  full
+  20 │ ta51       CPSAT_1w                        2871  0.0402174   FEASIBLE    1200.02        true        383.7  full
+  21 │ ta51       CPSAT_8w                        2760  0.0         OPTIMAL       63.6863      true        723.6  cpsat optimal
+  22 │ ta72       random                          5425  0.0470952   TIME_LIMIT  1200.02        true       1535.5  full
+  23 │ ta72       gurobi                          5566  0.07431     TIME_LIMIT  1200.02        true       1772.8  full
+  24 │ ta72       PolicyA_ScoreBased_fill         5570  0.075082    TIME_LIMIT  1200.01        true       1398.1  full
+  25 │ ta72       PolicyB_StructureBased_v2       5397  0.0416908   TIME_LIMIT  1200.01        true       1503.3  full
+  26 │ ta72       PolicyC_Dynamic_v3              5417  0.0455511   TIME_LIMIT  1200.01        true       1420.9  full
+  27 │ ta72       CPSAT_1w                        5581  0.0772052   FEASIBLE    1200.02        true        298.9  full
+  28 │ ta72       CPSAT_8w                        5181  0.0         OPTIMAL      343.36        true       1460.4  cpsat optimal
+combined: 8 instances → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_combined
+7×6 DataFrame
+ Row │ method                     instances  mean_primal_gap  mean_primal_integral  mean_rank  n_best_of_our_five
+     │ DataStri…                  Int64      Float64          Float64               Float64    Int64?
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ random                             8        0.137475               16.3123       4.25                    0
+   2 │ gurobi                             8        0.199837               21.2842       6.375                   0
+   3 │ PolicyA_ScoreBased_fill            8        0.171511               18.8499       6.125                   0
+   4 │ PolicyB_StructureBased_v2          8        0.0893471              11.8918       3.0                     6
+   5 │ PolicyC_Dynamic_v3                 8        0.110577               15.1154       3.625                   2
+   6 │ CPSAT_1w                           8        0.0674585               7.96689      3.625             missing
+   7 │ CPSAT_8w                           8        0.0134519               1.91173      1.0               missing
+aggregated 28 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2
+28×9 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  status      runtime    feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     DataStri…   Float64    Bool      Float64      String
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ swv11      random                          3916  0.309261    TIME_LIMIT  1200.0         true       1169.5  full
+   2 │ swv11      gurobi                          4139  0.383818    TIME_LIMIT  1200.0         true       1255.5  full
+   3 │ swv11      PolicyA_ScoreBased_fill         4014  0.342026    TIME_LIMIT  1200.01        true       1093.8  full
+   4 │ swv11      PolicyB_StructureBased_v2       3633  0.214644    TIME_LIMIT  1200.0         true       1255.8  full
+   5 │ swv11      PolicyC_Dynamic_v3              3668  0.226346    TIME_LIMIT  1200.0         true       1231.5  full
+   6 │ swv11      CPSAT_1w                        3143  0.0508191   FEASIBLE    1200.02        true        500.1  full
+   7 │ swv11      CPSAT_8w                        3065  0.0247409   FEASIBLE    1200.12        true       1228.1  full
+   8 │ ta31       random                          1849  0.0481859   TIME_LIMIT  1200.0         true       1095.2  full
+   9 │ ta31       gurobi                          1954  0.10771     TIME_LIMIT  1200.01        true       1086.8  full
+  10 │ ta31       PolicyA_ScoreBased_fill         1908  0.0816327   TIME_LIMIT  1200.0         true       1179.0  full
+  11 │ ta31       PolicyB_StructureBased_v2       1899  0.0765306   TIME_LIMIT  1200.01        true       1082.5  full
+  12 │ ta31       PolicyC_Dynamic_v3              1829  0.0368481   TIME_LIMIT  1200.0         true       1229.5  full
+  13 │ ta31       CPSAT_1w                        1781  0.00963719  FEASIBLE    1200.02        true        392.9  full
+  14 │ ta31       CPSAT_8w                        1768  0.00226757  FEASIBLE    1200.06        true       1030.0  full
+  15 │ ta51       random                          3174  0.15        TIME_LIMIT  1200.0         true       1252.2  full
+  16 │ ta51       gurobi                          3294  0.193478    TIME_LIMIT  1200.0         true       1154.3  full
+  17 │ ta51       PolicyA_ScoreBased_fill         3307  0.198188    TIME_LIMIT  1200.0         true       1166.8  full
+  18 │ ta51       PolicyB_StructureBased_v2       2911  0.0547101   TIME_LIMIT  1200.0         true       1248.2  full
+  19 │ ta51       PolicyC_Dynamic_v3              3204  0.16087     TIME_LIMIT  1200.0         true       1239.9  full
+  20 │ ta51       CPSAT_1w                        2871  0.0402174   FEASIBLE    1200.02        true        383.7  full
+  21 │ ta51       CPSAT_8w                        2760  0.0         OPTIMAL       63.6863      true        723.6  cpsat optimal
+  22 │ ta72       random                          5425  0.0470952   TIME_LIMIT  1200.02        true       1535.5  full
+  23 │ ta72       gurobi                          5566  0.07431     TIME_LIMIT  1200.02        true       1772.8  full
+  24 │ ta72       PolicyA_ScoreBased_fill         5570  0.075082    TIME_LIMIT  1200.01        true       1398.1  full
+  25 │ ta72       PolicyB_StructureBased_v2       5397  0.0416908   TIME_LIMIT  1200.01        true       1503.3  full
+  26 │ ta72       PolicyC_Dynamic_v3              5417  0.0455511   TIME_LIMIT  1200.01        true       1420.9  full
+  27 │ ta72       CPSAT_1w                        5581  0.0772052   FEASIBLE    1200.02        true        298.9  full
+  28 │ ta72       CPSAT_8w                        5181  0.0         OPTIMAL      343.36        true       1460.4  cpsat optimal
+combined: 8 instances → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_combined
+7×6 DataFrame
+ Row │ method                     instances  mean_primal_gap  mean_primal_integral  mean_rank  n_best_of_our_five
+     │ DataStri…                  Int64      Float64          Float64               Float64    Int64?
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ random                             8        0.137475               16.3123       4.25                    0
+   2 │ gurobi                             8        0.199837               21.2842       6.375                   0
+   3 │ PolicyA_ScoreBased_fill            8        0.171511               18.8499       6.125                   0
+   4 │ PolicyB_StructureBased_v2          8        0.0893471              11.8918       3.0                     6
+   5 │ PolicyC_Dynamic_v3                 8        0.110577               15.1154       3.625                   2
+   6 │ CPSAT_1w                           8        0.0674585               7.96689      3.625             missing
+   7 │ CPSAT_8w                           8        0.0134519               1.91173      1.0               missing
+aggregated 28 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2
+28×9 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  status      runtime    feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     DataStri…   Float64    Bool      Float64      String
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ swv11      random                          3916  0.309261    TIME_LIMIT  1200.0         true       1169.5  full
+   2 │ swv11      gurobi                          4139  0.383818    TIME_LIMIT  1200.0         true       1255.5  full
+   3 │ swv11      PolicyA_ScoreBased_fill         4014  0.342026    TIME_LIMIT  1200.01        true       1093.8  full
+   4 │ swv11      PolicyB_StructureBased_v2       3633  0.214644    TIME_LIMIT  1200.0         true       1255.8  full
+   5 │ swv11      PolicyC_Dynamic_v3              3668  0.226346    TIME_LIMIT  1200.0         true       1231.5  full
+   6 │ swv11      CPSAT_1w                        3143  0.0508191   FEASIBLE    1200.02        true        500.1  full
+   7 │ swv11      CPSAT_8w                        3065  0.0247409   FEASIBLE    1200.12        true       1228.1  full
+   8 │ ta31       random                          1849  0.0481859   TIME_LIMIT  1200.0         true       1095.2  full
+   9 │ ta31       gurobi                          1954  0.10771     TIME_LIMIT  1200.01        true       1086.8  full
+  10 │ ta31       PolicyA_ScoreBased_fill         1908  0.0816327   TIME_LIMIT  1200.0         true       1179.0  full
+  11 │ ta31       PolicyB_StructureBased_v2       1899  0.0765306   TIME_LIMIT  1200.01        true       1082.5  full
+  12 │ ta31       PolicyC_Dynamic_v3              1829  0.0368481   TIME_LIMIT  1200.0         true       1229.5  full
+  13 │ ta31       CPSAT_1w                        1781  0.00963719  FEASIBLE    1200.02        true        392.9  full
+  14 │ ta31       CPSAT_8w                        1768  0.00226757  FEASIBLE    1200.06        true       1030.0  full
+  15 │ ta51       random                          3174  0.15        TIME_LIMIT  1200.0         true       1252.2  full
+  16 │ ta51       gurobi                          3294  0.193478    TIME_LIMIT  1200.0         true       1154.3  full
+  17 │ ta51       PolicyA_ScoreBased_fill         3307  0.198188    TIME_LIMIT  1200.0         true       1166.8  full
+  18 │ ta51       PolicyB_StructureBased_v2       2911  0.0547101   TIME_LIMIT  1200.0         true       1248.2  full
+  19 │ ta51       PolicyC_Dynamic_v3              3204  0.16087     TIME_LIMIT  1200.0         true       1239.9  full
+  20 │ ta51       CPSAT_1w                        2871  0.0402174   FEASIBLE    1200.02        true        383.7  full
+  21 │ ta51       CPSAT_8w                        2760  0.0         OPTIMAL       63.6863      true        723.6  cpsat optimal
+  22 │ ta72       random                          5425  0.0470952   TIME_LIMIT  1200.02        true       1535.5  full
+  23 │ ta72       gurobi                          5566  0.07431     TIME_LIMIT  1200.02        true       1772.8  full
+  24 │ ta72       PolicyA_ScoreBased_fill         5570  0.075082    TIME_LIMIT  1200.01        true       1398.1  full
+  25 │ ta72       PolicyB_StructureBased_v2       5397  0.0416908   TIME_LIMIT  1200.01        true       1503.3  full
+  26 │ ta72       PolicyC_Dynamic_v3              5417  0.0455511   TIME_LIMIT  1200.01        true       1420.9  full
+  27 │ ta72       CPSAT_1w                        5581  0.0772052   FEASIBLE    1200.02        true        298.9  full
+  28 │ ta72       CPSAT_8w                        5181  0.0         OPTIMAL      343.36        true       1460.4  cpsat optimal
+combined: 8 instances → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_combined
+7×6 DataFrame
+ Row │ method                     instances  mean_primal_gap  mean_primal_integral  mean_rank  n_best_of_our_five
+     │ DataStri…                  Int64      Float64          Float64               Float64    Int64?
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ random                             8        0.137475               16.3123       4.25                    0
+   2 │ gurobi                             8        0.199837               21.2842       6.375                   0
+   3 │ PolicyA_ScoreBased_fill            8        0.171511               18.8499       6.125                   0
+   4 │ PolicyB_StructureBased_v2          8        0.0893471              11.8918       3.0                     6
+   5 │ PolicyC_Dynamic_v3                 8        0.110577               15.1154       3.625                   2
+   6 │ CPSAT_1w                           8        0.0674585               7.96689      3.625             missing
+   7 │ CPSAT_8w                           8        0.0134519               1.91173      1.0               missing

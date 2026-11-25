@@ -1,0 +1,2 @@
+instance,method,stalled,runtime,start,end,total_lost_s,sleep_overlap_s,reasons
+yn1,gurobi,False,1200.0,2026-11-25 20:51:32,2026-11-25 21:11:32,0.0,0.0,

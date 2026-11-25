@@ -1,0 +1,6 @@
+machine: Apple M5, 10 cores (4 performance + 6 efficiency), 16 GB RAM, macOS 27.2.1
+julia: 1.13.4, python: 3.14.8 (project venv .venv-cpsat), ortools: 9.15.6755
+variants: CPSAT_1w = num_workers 1, CPSAT_8w = num_workers 8; random_seed 42, max_time_in_seconds per run (see runs.csv), other CP-SAT parameters default
+note: the machine has only 4 performance cores, so the 8-worker variant also runs on efficiency cores
+runs: sequential, one at a time, not in parallel with other benchmarks
+written: 2026-11-24T11:13:26.916

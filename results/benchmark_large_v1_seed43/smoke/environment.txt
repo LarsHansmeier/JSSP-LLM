@@ -1,0 +1,7 @@
+machine: Apple M5, 10 cores (4 performance + 6 efficiency), 16 GB RAM, macOS 27.2.1
+julia: 1.13.4, gurobi: 13.0.3
+parallelism: 1 worker (sequential, one Julia process per run), Gurobi Threads = 1, Seed = 43
+runs: 5, free-y range [250, 4000] (capped by FREE_CAP = 0.75), sub-problem TimeLimit 7.5 s
+time per run: 60.0 s; run order: by instance, v1 method order; crash-safe driver (runs/<inst>__<method>.tmp → rename → DONE)
+script: scripts/benchmark_seed.jl (copy of the v1 benchmark_large.jl worker/aggregation, seed as parameter)
+written: 2026-11-24T23:30:25.150

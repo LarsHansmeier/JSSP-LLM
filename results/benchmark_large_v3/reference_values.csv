@@ -1,0 +1,6 @@
+instance,reference,lower_bound,source,proven_optimal
+ta21,1642,1642,"optimizizer.com/TA.php (LB = UB = 1642: LB [CPO2015], UB [Shylo2008]; accessed 2026-11-25); JSPLIB metadata outdated (LB 1539, UB 1644)",true
+yn1,884,869,"optimizizer.com/Extra.php (Yn01: LB 869 [YMRL2026], UB 884 [GTA2013]; accessed 2026-11-25); JSPLIB metadata outdated (LB 826, UB 885)",false
+ta42,1939,1887,"optimizizer.com/TA.php (LB 1887 [RL2024], UB 1939 [PMAEDC2019]; accessed 2026-11-25); JSPLIB metadata outdated (LB 1867, UB 1956)",false
+ta62,2869,2869,"JSPLIB metadata (optimum); optimizizer.com/TA.php agrees (LB = UB = 2869, accessed 2026-11-25)",true
+swv13,3104,3104,"JSPLIB metadata (optimum); optimizizer.com/Extra.php agrees (LB = UB = 3104, accessed 2026-11-25)",true

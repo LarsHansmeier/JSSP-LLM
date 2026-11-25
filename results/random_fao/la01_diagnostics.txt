@@ -1,0 +1,6 @@
+# Random FaO – Diagnose für la01
+# Spalten: iterations, share_time_limit, median_n_free_y, median_sub_time, median_setup_time, share_improved, share_accepted, time_last_improvement
+seed 1: iterations=23  share_time_limit=0.0  median_n_free_y=54.0  median_sub_time=0.0024  median_setup_time=0.0  share_improved=0.2174  share_accepted=0.2609  time_last_improvement=0.0624
+seed 2: iterations=24  share_time_limit=0.0  median_n_free_y=60.0  median_sub_time=0.0026  median_setup_time=0.0  share_improved=0.2917  share_accepted=0.2917  time_last_improvement=0.069
+seed 3: iterations=56  share_time_limit=0.0  median_n_free_y=50.5  median_sub_time=0.0023  median_setup_time=0.0  share_improved=0.0893  share_accepted=0.0893  time_last_improvement=0.1414
+mittel:  iterations=34.3333  share_time_limit=0.0  median_n_free_y=54.8333  median_sub_time=0.0025  median_setup_time=0.0  share_improved=0.1994  share_accepted=0.2139  time_last_improvement=0.091

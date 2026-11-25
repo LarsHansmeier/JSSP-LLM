@@ -1,0 +1,14 @@
+key,value
+instance,ta72
+num_workers,8
+time_limit,60.0
+seed,42
+status,FEASIBLE
+objective,5398.0
+bound,5181.0
+build_time,0.014085054397583008
+wall_time,60.013051000000004
+initial_makespan,5583
+peak_rss_mb,814.546875
+python,3.14.8
+ortools,9.15.6755

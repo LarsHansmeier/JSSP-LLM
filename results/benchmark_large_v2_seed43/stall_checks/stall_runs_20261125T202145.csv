@@ -1,0 +1,2 @@
+instance,method,stalled,runtime,start,end,total_lost_s,sleep_overlap_s,reasons
+ta72,CPSAT_8w,False,345.8,2026-11-25 20:15:58,2026-11-25 20:21:44,0.0,0.0,

@@ -1,0 +1,10 @@
+instance,level,generator,reason
+ta21,4000,all,> 0.8·Y_tot
+ta21,8000,all,> 0.8·Y_tot
+ta41,8000,all,> 0.8·Y_tot
+ta51,8000,window #1,instance budget
+ta51,8000,bb #1,instance budget
+swv12,4000,window #1,instance budget
+swv12,4000,bb #1,instance budget
+ta71,8000,bb #1,instance budget
+ta71,8000,bb #2,instance budget

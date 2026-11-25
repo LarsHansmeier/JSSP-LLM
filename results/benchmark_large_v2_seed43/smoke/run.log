@@ -1,0 +1,61 @@
+exported ta31 (30×15, initial makespan 2134) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke/input/ta31.json
+2026-11-25T10:07:08.312  ta31 random: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke: 1 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T100819.csv, stall_runs_20261125T100819.csv
+STALLED_RUNS=
+2026-11-25T10:08:19.263  ta31 random: done
+2026-11-25T10:08:19.264  ta31 gurobi: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke: 1 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T100928.csv, stall_runs_20261125T100928.csv
+STALLED_RUNS=
+2026-11-25T10:09:28.293  ta31 gurobi: done
+2026-11-25T10:09:28.293  ta31 PolicyA_ScoreBased_fill: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke: 1 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T101038.csv, stall_runs_20261125T101038.csv
+STALLED_RUNS=
+2026-11-25T10:10:38.680  ta31 PolicyA_ScoreBased_fill: done
+2026-11-25T10:10:38.681  ta31 PolicyB_StructureBased_v2: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke: 1 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T101149.csv, stall_runs_20261125T101149.csv
+STALLED_RUNS=
+2026-11-25T10:11:49.970  ta31 PolicyB_StructureBased_v2: done
+2026-11-25T10:11:49.970  ta31 PolicyC_Dynamic_v3: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke: 1 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T101302.csv, stall_runs_20261125T101302.csv
+STALLED_RUNS=
+2026-11-25T10:13:02.116  ta31 PolicyC_Dynamic_v3: done
+2026-11-25T10:13:02.117  ta31 CPSAT_1w: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke: 1 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T101404.csv, stall_runs_20261125T101404.csv
+STALLED_RUNS=
+2026-11-25T10:14:04.318  ta31 CPSAT_1w: done
+2026-11-25T10:14:04.318  ta31 CPSAT_8w: started
+stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke: 1 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T101505.csv, stall_runs_20261125T101505.csv
+STALLED_RUNS=
+2026-11-25T10:15:05.378  ta31 CPSAT_8w: done
+aggregated 7 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke
+7×9 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  status      runtime  feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     DataStri…   Float64  Bool      Float64      String
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ ta31       random                          2017   0.143424   TIME_LIMIT  60.0019      true       1228.5  full
+   2 │ ta31       gurobi                          2075   0.176304   TIME_LIMIT  60.0012      true       1268.8  full
+   3 │ ta31       PolicyA_ScoreBased_fill         2035   0.153628   TIME_LIMIT  60.0012      true       1240.7  full
+   4 │ ta31       PolicyB_StructureBased_v2       2015   0.14229    TIME_LIMIT  60.0017      true       1244.7  full
+   5 │ ta31       PolicyC_Dynamic_v3              2025   0.147959   TIME_LIMIT  60.0009      true       1259.8  full
+   6 │ ta31       CPSAT_1w                        1902   0.0782313  FEASIBLE    60.0106      true        159.4  full
+   7 │ ta31       CPSAT_8w                        1817   0.0300454  FEASIBLE    60.0212      true        385.3  full
+exported ta31 (30×15, initial makespan 2134) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke/input/ta31.json
+2026-11-25T17:50:33.420  ta31 random: DONE earlier, skipped
+2026-11-25T17:50:33.431  ta31 gurobi: DONE earlier, skipped
+2026-11-25T17:50:33.431  ta31 PolicyA_ScoreBased_fill: DONE earlier, skipped
+2026-11-25T17:50:33.431  ta31 PolicyB_StructureBased_v2: DONE earlier, skipped
+2026-11-25T17:50:33.431  ta31 PolicyC_Dynamic_v3: DONE earlier, skipped
+2026-11-25T17:50:33.431  ta31 CPSAT_1w: DONE earlier, skipped
+2026-11-25T17:50:33.431  ta31 CPSAT_8w: DONE earlier, skipped
+aggregated 7 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/smoke
+7×9 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  status      runtime  feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     DataStri…   Float64  Bool      Float64      String
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ ta31       random                          2017   0.143424   TIME_LIMIT  60.0019      true       1228.5  full
+   2 │ ta31       gurobi                          2075   0.176304   TIME_LIMIT  60.0012      true       1268.8  full
+   3 │ ta31       PolicyA_ScoreBased_fill         2035   0.153628   TIME_LIMIT  60.0012      true       1240.7  full
+   4 │ ta31       PolicyB_StructureBased_v2       2015   0.14229    TIME_LIMIT  60.0017      true       1244.7  full
+   5 │ ta31       PolicyC_Dynamic_v3              2025   0.147959   TIME_LIMIT  60.0009      true       1259.8  full
+   6 │ ta31       CPSAT_1w                        1902   0.0782313  FEASIBLE    60.0106      true        159.4  full
+   7 │ ta31       CPSAT_8w                        1817   0.0300454  FEASIBLE    60.0212      true        385.3  full

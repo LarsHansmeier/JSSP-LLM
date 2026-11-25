@@ -1,0 +1,59 @@
+v2 benchmark with seed 43 (results/benchmark_large_v2_seed43) — seed notes (written 2026-11-25, before the run)
+==========================================================================================================
+
+Where the seed enters (one parameter: --seed=43 of scripts/benchmark_large_v2_seed.jl → SEED[])
+------------------------------------------------------------------------------------------------
+scripts/benchmark_large_v2_seed.jl is a mechanical copy of scripts/benchmark_large_v2.jl. In v2 the
+seed 42 came from two constants: SEED = DEFAULT_SEED in scripts/benchmark_large.jl (worker) and
+SEED = 42 in scripts/benchmark_large_v2.jl (CP-SAT). Both are now the one parameter SEED[]:
+
+1. Fix-and-optimize methods and gurobi. Run by scripts/benchmark_seed.jl --worker --seed=43, the same
+   worker code as v2's scripts/benchmark_large.jl --worker, with the seed as a parameter. This worker
+   was already used for results/benchmark_large_v1_seed43.
+   a) random_fao(...; seed) (src/matheuristic.jl):
+      - rng = MersenneTwister(seed) for the per-iteration budget draw
+        n = rand(rng, n_free_min:n_free_max)
+      - the random release selection of `random` (random_free: shuffle(rng, operations))
+      - Gurobi parameter Seed of every sub-problem (build_model(...; seed))
+   b) solve_model(...; seed) (method gurobi): Gurobi parameter Seed of the full model.
+   Effect per method:
+      random    : budget draws, release selection, sub-problem Gurobi Seed
+      A v2, B v2: budget draws, sub-problem Gurobi Seed
+      C v3      : sub-problem Gurobi Seed only (ignores rng and the drawn budget)
+      gurobi    : Gurobi Seed of the full model only
+   PolicyA, PolicyB v2 and PolicyC v3 have no RNG of their own. src/ is unchanged (DEFAULT_SEED stays 42).
+2. CP-SAT: scripts/cpsat_jssp.py --seed 43 → solver.parameters.random_seed. Everything else is
+   unchanged: num_workers 1 / 8, max_time_in_seconds 1200, hints, model.
+
+Every run records the seed:
+- runs of our methods: seed and gurobi_Seed (read back from the Gurobi model) in run.csv;
+- CP-SAT runs: seed in cpsat_meta.csv.
+The --check step requires all of them to be 43.
+
+Does the initial solution depend on the seed?
+---------------------------------------------
+No. initial_schedule (MWKR, src/initial.jl) is deterministic and uses no RNG. The dry run reproduces
+v2's initial makespans (swv11 4257, ta31 2134, ta51 3435, ta72 5583) and the CP-SAT hint files
+(input/*.json are exported from initial_schedule, as in v2).
+
+Other differences from v2
+-------------------------
+Settings: none. The dry run compared each instance with v2's runs.csv and input/*.json:
+- free-y range 250-4000 with FREE_CAP 0.75, y_floor 250 (A v2, B v2);
+- sub-problem TimeLimit 7.5 s, Gurobi Threads 1;
+- CP-SAT num_workers 1 / 8, hint = initial schedule;
+- 1200 s per run;
+- same run order and crash safety (.tmp → atomic rename → DONE; restart skips DONE runs);
+- same reference values and the same Julia / Gurobi / Python / OR-Tools environment.
+
+Deliberate additions:
+- After every run the stall check (scripts/stall_check.py) is applied. A stalled run is moved to
+  runs_invalidated/ and rerun once immediately; if it stalls again, it is kept and marked in
+  repair_log.txt.
+- Extra outputs: seed / gurobi_Seed in run.csv, stall_checks/, seed_comparison.csv/.md, and
+  results/benchmark_large_combined_2seeds.
+
+Not reproducible bit for bit, even with the same seed:
+- The time limits are wall-clock, so the work done within a run depends on machine speed.
+- CP-SAT with 8 workers is also non-deterministic, because of thread timing.
+The seed comparison therefore measures seed variation plus timing noise.

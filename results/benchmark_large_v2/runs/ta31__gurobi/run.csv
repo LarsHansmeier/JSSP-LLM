@@ -1,0 +1,2 @@
+threads,status,initial,sub_time_limit,instance,gurobi_TimeLimit_last,primal_gap,feasible,method,incumbents_checked,incumbents_infeasible,y_range_effective,reference,peak_rss_mb,Y_tot,incumbent,runtime,time_last_improvement,started,bound
+1,TIME_LIMIT,2134,,ta31,1199.9765470027924,0.10770975056689343,true,gurobi,0,0,250-4000,1764,1086.8,6525,1954,1200.0062770843506,855.7402288913727,2026-11-24T14:57:42.938,1299

@@ -1,0 +1,17 @@
+{
+  "accept_equal": true,
+  "free_rule": "any",
+  "gurobi": "13.0.3",
+  "instances": ["ft10", "la01"],
+  "julia": "1.13.4",
+  "k_max": 0.2,
+  "k_min": 0.05,
+  "method": "gurobi",
+  "start_solution": "initial_schedule (mwkr) als MIP-Start",
+  "sub_time_limit": 5.0,
+  "threads": 4,
+  "time_base": "wall clock incl. model build",
+  "time_limit": 4.0,
+  "timestamp": "2026-11-17T13:59:37.273",
+  "warm_start": true
+}

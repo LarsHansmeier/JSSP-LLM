@@ -1,0 +1,37 @@
+Rule 1 – T_sub (≥ 300 solves in 20.0 min ⇒ E[time used] ≤ 4.0 s at the typical size)
+  T = 0.5 s: median rate at best size = 2.867 /s, median E[time used] = 0.13 s   best sizes: ta21=250, ta41=250, ta51=250, ta61=250, swv12=500, ta71=4000
+  T = 1.0 s: median rate at best size = 3.418 /s, median E[time used] = 0.202 s   best sizes: ta21=1000, ta41=250, ta51=250, ta61=250, swv12=500, ta71=250
+  T = 2.0 s: median rate at best size = 2.491 /s, median E[time used] = 0.436 s   best sizes: ta21=1000, ta41=250, ta51=4000, ta61=250, swv12=500, ta71=250
+  T = 5.0 s: median rate at best size = 3.524 /s, median E[time used] = 0.202 s   best sizes: ta21=1000, ta41=250, ta51=250, ta61=250, swv12=4000, ta71=250
+  T = 10.0 s: median rate at best size = 2.374 /s, median E[time used] = 0.202 s   best sizes: ta21=1000, ta41=250, ta51=250, ta61=250, swv12=4000, ta71=4000
+  T = 15.0 s: median rate at best size = 1.99 /s, median E[time used] = 0.202 s   best sizes: ta21=1000, ta41=250, ta51=250, ta61=250, swv12=4000, ta71=250
+  ⇒ T_sub = 5.0 s  (≈ WorkLimit 10.65 work units; median 2.13 work units/s)
+
+Rule 2 – y_max: largest size with p_opt(T_sub) ≥ 0.5 on every instance (size > 0.8·Y_tot: not applicable; not measured: counts as fail)
+  250: ta21=1.0, ta41=1.0, ta51=1.0, ta61=1.0, swv12=0.667, ta71=1.0  ✓
+  500: ta21=1.0, ta41=1.0, ta51=0.833, ta61=1.0, swv12=0.667, ta71=0.667  ✓
+  1000: ta21=1.0, ta41=0.667, ta51=0.5, ta61=0.667, swv12=0.5, ta71=0.667  ✓
+  2000: ta21=0.667, ta41=0.667, ta51=0.5, ta61=0.667, swv12=0.167, ta71=0.667  ✗
+  4000: ta21=n/a, ta41=0.333, ta51=0.333, ta61=0.667, swv12=0.0, ta71=0.667  ✗
+  8000: ta21=n/a, ta41=n/a, ta51=0.0, ta61=0.167, swv12=not measured, ta71=0.25  ✗
+
+Rule 3 – y_min = max(a, b, c)
+  a) smallest size with median solve time ≥ 0.05 s: 250 (median over instances 0.095 s)
+  b) smallest size with p_imp(T_sub) > 0 on ≥ 3 instances: 250 (4 instances)
+  c) y_max / 4 = 250
+
+Rule 4 – absolute vs. relative (best sizes at T_sub)
+  best sizes: ta21=1000 (26.32 % of Y_tot), ta41=250 (2.87 % of Y_tot), ta51=250 (1.36 % of Y_tot), ta61=250 (1.02 % of Y_tot), swv12=4000 (32.65 % of Y_tot), ta71=250 (0.25 % of Y_tot)
+  coefficient of variation: absolute 1.5, relative 1.366
+  ⇒ relative range (fraction of Y_tot) aligns better
+
+Recommendation
+  T_sub = 5.0 s, WorkLimit ≈ 10.65 (recommended: WorkLimit, reproducible)
+  range relative to Y_tot: [1.7 %, 6.8 %]
+  per instance (capped at FREE_CAP = 75 % of Y_tot as in the loop) and expected solves in 20.0 min:
+    ta21   [65, 259]  E[time used] ≈ 0.026 s  ⇒ ≤ 46575 solves (upper bound, loop overhead not included)
+    ta41   [148, 592]  E[time used] ≈ 0.575 s  ⇒ ≤ 2087 solves (upper bound, loop overhead not included)
+    ta51   [312, 1250]  E[time used] ≈ 1.938 s  ⇒ ≤ 619 solves (upper bound, loop overhead not included)
+    ta61   [417, 1667]  E[time used] ≈ 1.145 s  ⇒ ≤ 1048 solves (upper bound, loop overhead not included)
+    swv12  [208, 833]  E[time used] ≈ 1.759 s  ⇒ ≤ 682 solves (upper bound, loop overhead not included)
+    ta71   [1684, 6735]  E[time used] ≈ 2.018 s  ⇒ ≤ 595 solves (upper bound, loop overhead not included)

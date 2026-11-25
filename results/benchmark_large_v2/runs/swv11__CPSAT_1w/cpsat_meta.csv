@@ -1,0 +1,14 @@
+key,value
+instance,swv11
+num_workers,1
+time_limit,1200.0
+seed,42
+status,FEASIBLE
+objective,3143.0
+bound,2983.0
+build_time,0.004550933837890625
+wall_time,1200.0199830000001
+initial_makespan,4257
+peak_rss_mb,500.078125
+python,3.14.8
+ortools,9.15.6755

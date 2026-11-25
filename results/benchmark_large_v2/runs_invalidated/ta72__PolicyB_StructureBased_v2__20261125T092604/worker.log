@@ -1,0 +1,10 @@
+┌ Warning: ta72, iteration 35: subproblem ran 40.4 s with limit 7.5 s – machine asleep/paused?
+└ @ Main.JSSPLabLarge.JSSPLab ~ta72 PolicyB_StructureBased_v2: incumbent 5433, runtime 1200.0 s, feasible true, peak RSS 1749.5 MB
+limit 7.5 s – machine asleep/paused?
+└ @ Main.JSSPLabLarge.JSSPLab ~/Repos/OR Lab B/src/matheuristic.jl:258
+┌ Warning: ta72, iteration 50: subproblem ran 28.6 s with limit 7.5 s – machine asleep/paused?
+└ @ Main.JSSPLabLarge.JSSPLab ~/Repos/OR Lab B/src/matheuristic.jl:258
+┌ Warning: ta72, iteration 62: subproblem ran 183.6 s with limit 7.5 s – machine asleep/paused?
+└ @ Main.JSSPLabLarge.JSSPLab ~/Repos/OR Lab B/src/matheuristic.jl:258
+┌ Warning: ta72, iteration 69: subproblem ran 554.5 s with limit 7.5 s – machine asleep/paused?
+└ @ Main.JSSPLabLarge.JSSPLab ~/Repos/OR Lab B/src/matheuristic.jl:258

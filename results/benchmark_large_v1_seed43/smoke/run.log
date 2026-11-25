@@ -1,0 +1,20 @@
+2026-11-24T23:30:25.154  ta41 random: started (attempt 1)
+2026-11-24T23:31:34.970  ta41 random: done
+2026-11-24T23:31:34.973  ta41 gurobi: started (attempt 1)
+2026-11-24T23:32:43.131  ta41 gurobi: done
+2026-11-24T23:32:43.132  ta41 PolicyA_ScoreBased_fill: started (attempt 1)
+2026-11-24T23:33:52.642  ta41 PolicyA_ScoreBased_fill: done
+2026-11-24T23:33:52.642  ta41 PolicyB_StructureBased_v2: started (attempt 1)
+2026-11-24T23:35:02.649  ta41 PolicyB_StructureBased_v2: done
+2026-11-24T23:35:02.650  ta41 PolicyC_Dynamic_v3: started (attempt 1)
+2026-11-24T23:36:13.384  ta41 PolicyC_Dynamic_v3: done
+aggregated 5 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43/smoke
+5×7 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  runtime  feasible  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     Float64  Bool      String
+─────┼───────────────────────────────────────────────────────────────────────────────────────────
+   1 │ ta41       random                          2455    0.216551  60.0011      true  full
+   2 │ ta41       gurobi                          2547    0.262141  60.0008      true  full
+   3 │ ta41       PolicyA_ScoreBased_fill         2512    0.244797  60.0039      true  full
+   4 │ ta41       PolicyB_StructureBased_v2       2426    0.20218   60.0011      true  full
+   5 │ ta41       PolicyC_Dynamic_v3              2530    0.253717  60.0027      true  full

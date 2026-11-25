@@ -1,0 +1,57 @@
+instance,method,incumbent,primal_gap,primal_integral,reference,source,rank,best_of_our_five
+ta41,random,2264,0.12190287413280476,16.24107508632584,2018,JSPLIB metadata (best known upper bound),5.0,false
+ta41,gurobi,2427,0.2026759167492567,22.36169507973534,2018,JSPLIB metadata (best known upper bound),7.0,false
+ta41,PolicyA_ScoreBased_fill,2331,0.15510406342913777,17.420307749897724,2018,JSPLIB metadata (best known upper bound),6.0,false
+ta41,PolicyB_StructureBased_v2,2155,0.06788899900891972,9.540734988620345,2018,JSPLIB metadata (best known upper bound),3.0,true
+ta41,PolicyC_Dynamic_v3,2228,0.10406342913776016,16.26032888755414,2018,JSPLIB metadata (best known upper bound),4.0,false
+ta41,CPSAT_1w,2154,0.06739345887016848,7.841380120691381,2018,JSPLIB metadata (best known upper bound),2.0,false
+ta41,CPSAT_8w,2080,0.030723488602576808,3.6028187200408595,2018,JSPLIB metadata (best known upper bound),1.0,false
+ta61,random,3061,0.06729428172942817,8.445725554757093,2868,JSPLIB metadata (optimum),4.0,false
+ta61,gurobi,3242,0.1304044630404463,13.758809165475759,2868,JSPLIB metadata (optimum),6.0,false
+ta61,PolicyA_ScoreBased_fill,3253,0.13423988842398885,13.615868319562013,2868,JSPLIB metadata (optimum),7.0,false
+ta61,PolicyB_StructureBased_v2,3032,0.05718270571827057,8.210753520849359,2868,JSPLIB metadata (optimum),3.0,false
+ta61,PolicyC_Dynamic_v3,2990,0.042538354253835425,6.303321714798333,2868,JSPLIB metadata (optimum),2.0,true
+ta61,CPSAT_1w,3227,0.12517433751743376,13.015457320049867,2868,JSPLIB metadata (optimum),5.0,false
+ta61,CPSAT_8w,2885,0.005927475592747559,1.202826189982826,2868,JSPLIB metadata (optimum),1.0,false
+swv12,random,3870,0.2887112887112887,32.20676797208941,3003,JSPLIB metadata (best known upper bound),5.0,false
+swv12,gurobi,4214,0.40326340326340326,41.2209573503948,3003,JSPLIB metadata (best known upper bound),7.0,false
+swv12,PolicyA_ScoreBased_fill,3889,0.29503829503829504,34.10941123515152,3003,JSPLIB metadata (best known upper bound),6.0,false
+swv12,PolicyB_StructureBased_v2,3466,0.15417915417915418,23.702254550592496,3003,JSPLIB metadata (best known upper bound),3.0,true
+swv12,PolicyC_Dynamic_v3,3604,0.20013320013320013,26.43320268293984,3003,JSPLIB metadata (best known upper bound),4.0,false
+swv12,CPSAT_1w,3199,0.06526806526806526,7.3706747994721145,3003,JSPLIB metadata (best known upper bound),2.0,false
+swv12,CPSAT_8w,3135,0.04395604395604396,4.792828353539547,3003,JSPLIB metadata (best known upper bound),1.0,false
+ta71,random,5832,0.06734992679355783,7.602255418660322,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",3.0,false
+ta71,gurobi,6027,0.10303806734992679,10.371283868246831,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",6.0,false
+ta71,PolicyA_ScoreBased_fill,5960,0.09077598828696926,9.619404493257031,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",5.0,false
+ta71,PolicyB_StructureBased_v2,5726,0.0479502196193265,5.413918260341303,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",2.0,true
+ta71,PolicyC_Dynamic_v3,5837,0.06826500732064422,8.575000724173886,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",4.0,false
+ta71,CPSAT_1w,6032,0.10395314787701318,10.395340507852474,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",7.0,false
+ta71,CPSAT_8w,5464,0.0,1.3048668116907802,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",1.0,false
+swv11,random,3916,0.30926111668338346,35.83905785718544,2991,JSPLIB metadata (best known upper bound; LB 2983),5.0,false
+swv11,gurobi,4139,0.38381812102975593,39.342018977171286,2991,JSPLIB metadata (best known upper bound; LB 2983),7.0,false
+swv11,PolicyA_ScoreBased_fill,4014,0.3420260782347041,37.45866865476983,2991,JSPLIB metadata (best known upper bound; LB 2983),6.0,false
+swv11,PolicyB_StructureBased_v2,3633,0.21464393179538616,24.274252161179366,2991,JSPLIB metadata (best known upper bound; LB 2983),3.0,true
+swv11,PolicyC_Dynamic_v3,3668,0.22634570377800067,32.258488895614654,2991,JSPLIB metadata (best known upper bound; LB 2983),4.0,false
+swv11,CPSAT_1w,3143,0.05081912403878302,7.548325183363852,2991,JSPLIB metadata (best known upper bound; LB 2983),2.0,false
+swv11,CPSAT_8w,3065,0.02474088933467068,3.0092677692754206,2991,JSPLIB metadata (best known upper bound; LB 2983),1.0,false
+ta31,random,1849,0.0481859410430839,6.997330169930478,1764,JSPLIB metadata (optimum),4.0,false
+ta31,gurobi,1954,0.10770975056689343,13.292427680344632,1764,JSPLIB metadata (optimum),7.0,false
+ta31,PolicyA_ScoreBased_fill,1908,0.08163265306122448,9.675154795632253,1764,JSPLIB metadata (optimum),6.0,false
+ta31,PolicyB_StructureBased_v2,1899,0.07653061224489796,9.108082438407301,1764,JSPLIB metadata (optimum),5.0,false
+ta31,PolicyC_Dynamic_v3,1829,0.036848072562358274,7.229312224385418,1764,JSPLIB metadata (optimum),3.0,true
+ta31,CPSAT_1w,1781,0.00963718820861678,4.295317391842976,1764,JSPLIB metadata (optimum),2.0,false
+ta31,CPSAT_8w,1768,0.0022675736961451248,0.44330270913146885,1764,JSPLIB metadata (optimum),1.0,false
+ta51,random,3174,0.15,17.75462798178196,2760,JSPLIB metadata (optimum),4.0,false
+ta51,gurobi,3294,0.1934782608695652,22.338019507245164,2760,JSPLIB metadata (optimum),6.0,false
+ta51,PolicyA_ScoreBased_fill,3307,0.19818840579710145,21.382515373077368,2760,JSPLIB metadata (optimum),7.0,false
+ta51,PolicyB_StructureBased_v2,2911,0.05471014492753623,10.531039514425007,2760,JSPLIB metadata (optimum),3.0,true
+ta51,PolicyC_Dynamic_v3,3204,0.1608695652173913,18.264703938012246,2760,JSPLIB metadata (optimum),5.0,false
+ta51,CPSAT_1w,2871,0.04021739130434782,5.548130920183935,2760,JSPLIB metadata (optimum),2.0,false
+ta51,CPSAT_8w,2760,0.0,0.28359212332090045,2760,JSPLIB metadata (optimum),1.0,false
+ta72,random,5425,0.047095155375410154,5.411200987397647,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",4.0,false
+ta72,gurobi,5566,0.07430997876857749,7.5887864743782,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",5.0,false
+ta72,PolicyA_ScoreBased_fill,5570,0.07508203049604323,7.518158326958595,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",6.0,false
+ta72,PolicyB_StructureBased_v2,5397,0.04169079328314997,4.353425472029494,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",2.0,true
+ta72,PolicyC_Dynamic_v3,5417,0.045551051920478675,5.599099089159344,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",3.0,false
+ta72,CPSAT_1w,5581,0.07720517274657403,7.720532859127013,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",7.0,false
+ta72,CPSAT_8w,5181,0.0,0.6543390091526129,5181,"optimizizer.com/TA.php (LB = UB = 5181, [Ta1994]; accessed 2026-11-24); not in JSPLIB metadata",1.0,false

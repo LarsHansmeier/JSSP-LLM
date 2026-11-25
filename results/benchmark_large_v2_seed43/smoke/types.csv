@@ -1,0 +1,8 @@
+instance,method,type,iterations,improving_iterations
+ta31,PolicyB_StructureBased_v2,BB,6,5
+ta31,PolicyB_StructureBased_v2,M,2,1
+ta31,PolicyB_StructureBased_v2,TW,2,0
+ta31,PolicyB_StructureBased_v2,J,1,0
+ta31,PolicyC_Dynamic_v3,CB,24,20
+ta31,PolicyC_Dynamic_v3,TW,3,0
+ta31,PolicyC_Dynamic_v3,MA,4,0

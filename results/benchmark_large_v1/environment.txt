@@ -1,0 +1,5 @@
+machine: Apple M5, 10 cores (4 performance + 6 efficiency), 16 GB RAM, macOS 27.2.1
+julia: 1.13.4, gurobi: 13.0.3
+parallelism: 1 worker (sequential, one Julia process per run), Gurobi Threads = 1, Seed = 42
+runs: 20, free-y range [250, 4000] (capped by FREE_CAP = 0.75), sub-problem TimeLimit 7.5 s
+written: 2026-11-23T23:20:39.338

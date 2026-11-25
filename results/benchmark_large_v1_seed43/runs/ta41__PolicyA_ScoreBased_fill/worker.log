@@ -1,0 +1,4 @@
+┌ Warning: ta41, iteration 92: subproblem solution (makespan 2437) rejected by the checker
+│   errors =
+│    1-element Vector{ta41 PolicyA_ScoreBased_fill (seed 43): incumbent 2312, runtime 1200.0 s, feasible true, peak RSS 1314.9 MB
+PLabSeed.JSSPLab ~/Repos/OR Lab B/src/matheuristic.jl:283

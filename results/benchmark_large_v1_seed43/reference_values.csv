@@ -1,0 +1,5 @@
+instance,reference,source,note
+ta41,2018,JSPLIB metadata (best known upper bound),"optimizizer.com lists a newer UB 2006 (Shylo2008), LB 1912 – not used, to stay comparable with earlier benchmarks"
+ta61,2868,JSPLIB metadata (optimum),""
+swv12,3003,JSPLIB metadata (best known upper bound),""
+ta71,5464,"optimizizer.com/TA.php (LB = UB = 5464, [Ta1994]; accessed 2026-11-23); not in JSPLIB metadata",""

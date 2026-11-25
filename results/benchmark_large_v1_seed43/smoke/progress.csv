@@ -1,0 +1,6 @@
+instance,method,seed,start,finish,status
+ta41,random,43,2026-11-24T23:30:25.154,2026-11-24T23:31:34.969,done
+ta41,gurobi,43,2026-11-24T23:31:34.973,2026-11-24T23:32:43.131,done
+ta41,PolicyA_ScoreBased_fill,43,2026-11-24T23:32:43.132,2026-11-24T23:33:52.642,done
+ta41,PolicyB_StructureBased_v2,43,2026-11-24T23:33:52.642,2026-11-24T23:35:02.649,done
+ta41,PolicyC_Dynamic_v3,43,2026-11-24T23:35:02.649,2026-11-24T23:36:13.384,done

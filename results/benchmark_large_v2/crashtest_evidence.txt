@@ -1,0 +1,35 @@
+Crash test 2026-11-24, scripts/benchmark_large_v2.jl --out=benchmark_large_v2_crashtest --time=60 --instances=swv11 --methods=random,gurobi,CPSAT_1w
+driver killed with kill -9 during run 2 (gurobi) at 14:17:33, then restarted
+--- run.log
+exported swv11 (50×10, initial makespan 4257) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_crashtest/input/swv11.json
+2026-11-24T14:16:01.206  swv11 random: started
+2026-11-24T14:17:11.493  swv11 random: done
+2026-11-24T14:17:11.497  swv11 gurobi: started
+== restart 14:17:33
+2026-11-24T14:17:41.596  killing orphaned child 6154 (/Users/larshansmeier/.julia/juliaup/julia-1.13.4+0.aarch64.apple.darwin14/Julia-)
+2026-11-24T14:17:42.613  removed incomplete run folders (re-run from scratch): swv11__gurobi.tmp
+exported swv11 (50×10, initial makespan 4257) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_crashtest/input/swv11.json
+2026-11-24T14:17:45.021  swv11 random: DONE earlier, skipped
+2026-11-24T14:17:45.021  swv11 gurobi: started
+2026-11-24T14:18:53.386  swv11 gurobi: done
+2026-11-24T14:18:53.387  swv11 CPSAT_1w: started
+2026-11-24T14:19:54.181  swv11 CPSAT_1w: done
+aggregated 3 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_crashtest
+3×9 DataFrame
+ Row │ instance   method     incumbent  primal_gap  status      runtime  feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…  Int64      Float64     DataStri…   Float64  Bool      Float64      String
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ swv11      random          4257    0.42327   TIME_LIMIT  60.0026      true       1147.6  full
+   2 │ swv11      gurobi          4214    0.408893  TIME_LIMIT  60.001       true       1234.0  full
+   3 │ swv11      CPSAT_1w        3332    0.114009  FEASIBLE    60.082       true        227.8  full
+--- progress.csv
+instance,method,start,finish,status
+swv11,random,2026-11-24T14:16:01.205,2026-11-24T14:17:11.493,done
+swv11,gurobi,2026-11-24T14:17:11.497,restart 2026-11-24T14:17:41.584,interrupted
+swv11,gurobi,2026-11-24T14:17:45.021,2026-11-24T14:18:53.386,done
+swv11,CPSAT_1w,2026-11-24T14:18:53.386,2026-11-24T14:19:54.181,done
+--- run folders after restart
+swv11__CPSAT_1w: DONE cpsat.json cpsat.log cpsat_meta.csv cpsat_starts.csv cpsat_trace.csv run.csv trace.csv 
+swv11__gurobi: DONE run.csv schedule.csv trace.csv worker.log worker_finished.txt 
+swv11__random: DONE iterations.csv run.csv schedule.csv trace.csv worker.log worker_finished.txt 
+--- leftover .tmp folders: 0

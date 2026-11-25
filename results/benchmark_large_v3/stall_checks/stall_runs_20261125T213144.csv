@@ -1,0 +1,2 @@
+instance,method,stalled,runtime,start,end,total_lost_s,sleep_overlap_s,reasons
+ta42,PolicyA_ScoreBased_fill,False,1200.0,2026-11-25 21:11:42,2026-11-25 21:31:42,0.3,0.0,

@@ -1,0 +1,10 @@
+machine: Apple M5, 10 cores (4 performance + 6 efficiency), 16 GB RAM, macOS 27.2.1
+julia: 1.13.4, gurobi: 13.0.3, python: 3.14.8 (project venv .venv-cpsat), ortools: 9.15.6755
+runs: 7, 60.0 s each, strictly sequential (one process at a time), not in parallel with other benchmarks
+our methods: random, gurobi, PolicyA_ScoreBased_fill, PolicyB_StructureBased_v2, PolicyC_Dynamic_v3 via scripts/benchmark_seed.jl --worker --seed=43 (same worker code as v2, one Julia process per run, ft06 warm-up)
+  free-y range [250, 4000] (capped by FREE_CAP = 0.75), y_floor = effective range minimum for A v2 and B v2,
+  sub-problem TimeLimit 7.5 s, Gurobi Threads = 1, Seed = 43, start = initial_schedule, Big-M ub = its makespan
+CP-SAT: CPSAT_1w = num_workers 1, CPSAT_8w = num_workers 8; random_seed 43, hint = initial_schedule (+ its makespan), other parameters default
+note: the machine has only 4 performance cores, so the 8-worker variant also runs on efficiency cores
+crash safety: runs/<inst>__<method>.tmp → atomic rename → DONE; see header of scripts/benchmark_large_v2.jl; stall check after every run (scripts/stall_check.py)
+written: 2026-11-25T17:50:31.030

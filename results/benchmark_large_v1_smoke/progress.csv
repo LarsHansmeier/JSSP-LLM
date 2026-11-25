@@ -1,0 +1,5 @@
+instance,method,start,finish,status
+swv12,PolicyA_ScoreBased_fill,2026-11-23T23:12:07.358,2026-11-23T23:13:47.190,done
+ta71,PolicyB_StructureBased_v2,2026-11-23T23:13:47.205,2026-11-23T23:15:27.688,done
+swv12,PolicyB_StructureBased_v2,2026-11-23T23:15:27.689,2026-11-23T23:17:08.150,done
+ta71,PolicyA_ScoreBased_fill,2026-11-23T23:17:08.150,2026-11-23T23:18:47.691,done

@@ -1,0 +1,2 @@
+instance,method,stalled,runtime,start,end,total_lost_s,sleep_overlap_s,reasons
+swv11,random,False,1200.0,2026-11-25 10:15:35,2026-11-25 10:35:35,0.4,0.0,

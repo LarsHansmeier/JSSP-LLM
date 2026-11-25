@@ -1,0 +1,12 @@
+{
+  "n_free_ys": [100, 200, 400, 800],
+  "sub_times": [1.0],
+  "accept_equal": true,
+  "instances": ["ft10", "la21", "ta01", "swv12"],
+  "seeds": [42],
+  "time_limit": 30.0,
+  "threads": 4,
+  "gurobi": "13.0.3",
+  "julia": "1.13.4",
+  "timestamp": "2026-11-21T20:17:10.518"
+}

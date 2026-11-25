@@ -1,0 +1,262 @@
+iteration,type,candidate,k,budget,n_released,n_critical,n_blocks,n_free_y,n_tabu,n_border_ops,bb_candidate_index,improved
+1,BB,borders from block 1 (of 3),21,1043,22,22,3,1006,0,12,,true
+2,M,machine 3,73,3593,136,79,6,3584,0,,,true
+3,BB,borders from block 1 (of 2),34,1679,44,44,2,1658,0,8,,true
+4,TW,window 696 (r = 2773),55,2702,58,16,2,2665,0,,,false
+5,BB,borders from block 1 (of 2),57,2817,79,64,2,2808,1,8,,false
+6,J,job 5,59,2920,61,7,2,2895,2,,,true
+7,BB,borders from block 1 (of 4),80,3923,100,57,4,3923,0,16,,true
+8,M,machine 14,63,3087,115,82,8,3080,0,,,false
+9,BB,borders from block 1 (of 2),20,1002,23,23,2,1000,1,8,,false
+10,TW,window 737 (r = 3064),14,691,14,5,2,666,2,,,false
+11,BB,borders from block 1 (of 2),20,989,22,22,2,972,3,8,,false
+12,J,job 15,33,1655,34,2,2,1643,4,,,true
+13,BB,borders from block 1 (of 14),53,2597,55,55,14,2554,0,47,,true
+14,M,machine 14,74,3669,146,56,4,3669,0,,,true
+15,BB,borders from block 1 (of 3),18,908,19,19,3,879,0,12,,true
+16,TW,window 221 (r = 896),74,3647,78,14,8,3632,0,,,true
+17,BB,borders from block 1 (of 6),19,956,20,20,6,946,0,18,,true
+18,J,job 25,36,1769,36,1,6,1737,0,,,false
+19,BB,borders from block 1 (of 6),9,454,9,9,6,425,1,8,,true
+20,M,machine 14,58,2876,109,46,5,2855,0,,,false
+21,BB,borders from block 1 (of 5),78,3847,98,59,5,3822,1,18,,true
+22,TW,window 4 (r = 0),17,866,17,4,8,830,0,,,false
+23,BB,borders from block 1 (of 8),25,1246,26,26,8,1232,1,23,,true
+24,J,job 10,64,3148,66,8,4,3120,0,,,false
+25,BB,borders from block 1 (of 4),14,711,15,15,4,704,1,12,,false
+26,M,machine 14,19,969,26,26,4,949,2,,,false
+27,BB,borders from block 1 (of 4),54,2681,70,70,4,2649,3,15,,false
+28,TW,window 64 (r = 214),18,922,18,4,4,876,4,,,false
+29,BB,borders from block 1 (of 4),62,3046,80,75,4,2999,5,15,,false
+30,J,job 10,18,907,18,2,4,879,6,,,false
+31,BB,borders from block 1 (of 4),72,3544,92,75,4,3531,7,15,,false
+32,M,machine 14,61,3025,113,67,4,3009,8,,,false
+33,BB,borders from block 1 (of 4),19,973,20,20,4,936,9,15,,false
+34,TW,window 18 (r = 41),64,3176,67,9,4,3146,10,,,false
+35,BB,borders from block 1 (of 4),52,2586,67,67,4,2583,11,15,,false
+36,J,job 25,64,3175,67,7,5,3165,12,,,false
+37,BB,borders from block 1 (of 5),62,3083,81,81,5,3080,13,19,,false
+38,M,machine 14,22,1085,32,32,5,1072,14,,,false
+39,BB,borders from block 1 (of 5),68,3365,87,83,5,3320,15,19,,false
+40,TW,window 150 (r = 560),29,1424,29,7,5,1403,16,,,false
+41,BB,borders from block 1 (of 5),48,2372,55,55,5,2349,17,19,,false
+42,J,job 25,42,2100,43,5,5,2066,18,,,true
+43,BB,borders from block 1 (of 3),15,748,16,16,3,743,0,11,,true
+44,M,machine 3,79,3907,154,74,8,3865,0,,,true
+45,BB,borders from block 1 (of 6),61,2990,73,60,6,2963,0,19,,true
+46,TW,window 731 (r = 2985),20,985,20,8,6,962,0,,,false
+47,BB,borders from block 1 (of 5),23,1145,24,24,5,1111,1,19,,true
+48,J,job 47,44,2202,45,5,6,2160,0,,,true
+49,BB,borders from block 1 (of 9),67,3322,81,80,9,3280,0,34,,true
+50,M,machine 14,33,1652,59,46,14,1630,0,,,false
+51,BB,borders from block 1 (of 14),20,1025,21,21,14,995,1,20,,false
+52,TW,window 237 (r = 900),18,895,18,9,14,876,2,,,false
+53,BB,borders from block 1 (of 14),15,777,16,16,14,760,3,16,,false
+54,J,job 45,45,2251,46,8,14,2206,4,,,false
+55,BB,borders from block 1 (of 14),61,3027,65,65,14,3014,5,51,,true
+56,M,machine 3,67,3328,123,58,2,3324,0,,,false
+57,BB,borders from block 1 (of 2),34,1667,43,43,2,1666,1,8,,false
+58,TW,window 468 (r = 1831),9,452,9,2,2,439,2,,,false
+59,BB,borders from block 1 (of 2),7,383,8,8,2,380,3,8,,false
+60,J,job 45,13,658,13,1,2,637,4,,,false
+61,BB,borders from block 1 (of 2),49,2417,65,58,2,2371,5,8,,true
+62,M,machine 14,28,1386,53,36,6,1369,0,,,false
+63,BB,borders from block 1 (of 6),58,2881,69,69,6,2860,1,23,,true
+64,TW,window 224 (r = 853),11,562,11,3,7,537,0,,,false
+65,BB,borders from block 1 (of 7),31,1527,32,32,7,1488,1,22,,true
+66,J,job 29,56,2790,58,3,2,2758,0,,,true
+67,BB,borders from block 1 (of 13),76,3747,83,83,13,3718,0,48,,false
+68,M,machine 14,14,691,16,16,2,664,1,,,false
+69,BB,borders from block 1 (of 2),72,3528,93,55,2,3524,2,8,,false
+70,TW,window 646 (r = 2528),43,2132,44,4,2,2091,3,,,false
+71,BB,borders from block 1 (of 2),30,1500,36,36,2,1467,4,8,,false
+72,J,job 20,55,2697,56,7,2,2666,5,,,true
+73,BB,borders from block 1 (of 11),65,3193,71,71,11,3176,0,41,,true
+74,M,machine 14,14,734,18,18,4,729,0,,,false
+75,BB,borders from block 1 (of 4),18,887,18,18,4,850,1,16,,true
+76,TW,window 674 (r = 2615),75,3687,79,13,6,3658,0,,,true
+77,BB,borders from block 1 (of 3),79,3914,97,57,3,3911,0,12,,true
+78,J,job 10,59,2899,61,6,10,2895,0,,,true
+79,BB,borders from block 1 (of 7),38,1901,41,41,7,1899,0,26,,true
+80,M,machine 14,18,898,23,23,4,874,0,,,true
+81,BB,borders from block 1 (of 6),77,3779,98,63,6,3765,0,20,,true
+82,TW,window 727 (r = 2902),22,1080,22,7,2,1059,0,,,false
+83,BB,borders from block 1 (of 2),64,3160,84,58,2,3150,1,8,,false
+84,J,job 11,28,1403,28,3,2,1359,2,,,false
+85,BB,borders from block 1 (of 2),6,341,7,7,2,328,3,4,,false
+86,M,machine 14,34,1703,60,48,2,1670,4,,,false
+87,BB,borders from block 1 (of 2),62,3038,81,58,2,3023,5,8,,false
+88,TW,window 724 (r = 2898),5,269,6,2,2,294,6,,,false
+89,BB,borders from block 1 (of 2),32,1598,41,41,2,1592,7,8,,false
+90,J,job 25,31,1563,32,3,2,1549,8,,,false
+91,BB,borders from block 1 (of 2),58,2855,77,58,2,2844,9,8,,false
+92,M,machine 14,42,2100,73,56,2,2099,10,,,false
+93,BB,borders from block 1 (of 2),9,454,9,9,2,425,11,8,,false
+94,TW,window 700 (r = 2778),50,2453,52,10,2,2448,12,,,false
+95,BB,borders from block 1 (of 2),19,978,22,22,2,972,13,8,,false
+96,J,job 25,67,3311,70,7,2,3300,14,,,false
+97,BB,borders from block 1 (of 2),22,1108,25,25,2,1084,15,8,,false
+98,M,machine 14,78,3861,153,57,2,3819,16,,,false
+99,BB,borders from block 1 (of 2),11,560,12,12,2,557,17,8,,false
+100,TW,window 725 (r = 2895),19,932,19,6,2,921,18,,,false
+101,BB,borders from block 1 (of 2),41,2056,59,58,2,2035,19,8,,false
+102,J,job 25,73,3609,76,7,2,3569,20,,,false
+103,BB,borders from block 1 (of 2),30,1507,38,38,2,1507,21,8,,false
+104,M,machine 14,41,2017,70,56,2,2015,22,,,false
+105,BB,borders from block 1 (of 2),66,3273,88,58,2,3273,23,8,,true
+106,TW,window 457 (r = 1769),55,2705,57,13,11,2704,0,,,true
+107,BB,borders from block 1 (of 12),78,3853,89,89,12,3828,0,44,,true
+108,J,job 1,44,2194,45,2,4,2160,0,,,false
+109,BB,borders from block 1 (of 4),56,2748,69,53,4,2729,1,15,,true
+110,M,machine 14,11,563,13,13,5,559,0,,,true
+111,BB,borders from block 1 (of 3),65,3231,85,58,3,3229,0,12,,true
+112,TW,window 72 (r = 278),6,332,6,3,15,294,0,,,false
+113,BB,borders from block 1 (of 15),79,3911,91,91,15,3905,1,48,,true
+114,J,job 7,5,277,6,0,2,294,0,,,false
+115,BB,borders from block 1 (of 2),53,2633,70,57,2,2613,1,8,,false
+116,M,machine 14,48,2380,87,55,2,2372,2,,,false
+117,BB,borders from block 1 (of 2),15,776,17,17,2,767,3,8,,false
+118,TW,window 676 (r = 2624),75,3685,79,16,2,3660,4,,,false
+119,BB,borders from block 1 (of 2),77,3806,104,55,2,3777,5,8,,true
+120,J,job 48,9,445,9,1,8,441,0,,,false
+121,BB,borders from block 1 (of 8),6,342,7,7,8,334,1,7,,true
+122,M,machine 14,56,2765,106,62,5,2729,0,,,true
+123,BB,borders from block 1 (of 3),21,1038,23,23,3,1020,0,10,,false
+124,TW,window 675 (r = 2577),76,3749,81,15,3,3735,1,,,false
+125,BB,borders from block 1 (of 3),17,843,18,18,3,821,2,10,,false
+126,J,job 48,50,2498,52,3,3,2482,3,,,false
+127,BB,borders from block 1 (of 3),28,1416,35,35,3,1402,4,10,,true
+128,M,machine 14,63,3088,115,60,5,3080,0,,,true
+129,BB,borders from block 1 (of 4),47,2351,58,58,4,2349,0,16,,true
+130,TW,window 31 (r = 92),48,2395,50,5,3,2380,0,,,false
+131,BB,borders from block 1 (of 3),12,591,12,12,3,570,1,12,,true
+132,J,job 48,13,661,13,1,3,637,0,,,false
+133,BB,borders from block 1 (of 3),19,953,20,20,3,915,1,12,,true
+134,M,machine 14,80,3938,155,85,6,3910,0,,,true
+135,BB,borders from block 1 (of 4),40,1989,50,50,4,1962,0,16,,false
+136,TW,window 337 (r = 1305),23,1171,24,4,4,1164,1,,,false
+137,BB,borders from block 1 (of 4),11,550,11,11,4,512,2,8,,false
+138,J,job 48,21,1046,21,1,4,1023,3,,,false
+139,BB,borders from block 1 (of 4),8,414,8,8,4,380,4,8,,false
+140,M,machine 14,20,1017,29,29,4,1015,5,,,false
+141,BB,borders from block 1 (of 4),78,3869,95,60,4,3826,6,16,,false
+142,TW,window 172 (r = 653),59,2921,61,6,3,2887,7,,,true
+143,BB,borders from block 1 (of 9),34,1680,37,37,9,1679,0,26,,true
+144,J,job 48,41,2010,41,5,7,1972,0,,,true
+145,BB,borders from block 1 (of 5),22,1084,23,23,5,1078,0,19,,false
+146,M,machine 14,47,2333,84,48,5,2330,1,,,false
+147,BB,borders from block 1 (of 5),38,1892,44,44,5,1886,2,19,,false
+148,TW,window 12 (r = 0),70,3432,73,10,5,3418,3,,,false
+149,BB,borders from block 1 (of 5),47,2333,59,59,5,2318,4,19,,false
+150,J,job 11,80,3936,84,4,3,3921,5,,,false
+151,BB,borders from block 1 (of 3),10,511,10,10,3,469,6,8,,false
+152,M,machine 14,11,548,12,12,3,522,7,,,false
+153,BB,borders from block 1 (of 3),20,1012,23,23,3,1010,8,12,,false
+154,TW,window 480 (r = 1830),31,1534,31,3,3,1498,9,,,false
+155,BB,borders from block 1 (of 3),52,2562,66,52,3,2537,10,12,,false
+156,J,job 44,80,3946,84,4,3,3921,11,,,false
+157,BB,borders from block 1 (of 3),37,1860,51,51,3,1854,12,12,,false
+158,M,machine 14,33,1647,59,43,3,1630,13,,,false
+159,BB,borders from block 1 (of 3),16,789,17,17,3,785,14,12,,false
+160,TW,window 453 (r = 1735),58,2881,60,4,3,2839,15,,,false
+161,BB,borders from block 1 (of 3),20,1027,23,23,3,1010,16,12,,false
+162,J,job 12,15,742,15,3,3,735,17,,,false
+163,BB,borders from block 1 (of 3),31,1555,38,38,3,1552,18,12,,false
+164,M,machine 14,45,2250,79,48,3,2240,19,,,false
+165,BB,borders from block 1 (of 3),57,2796,71,54,3,2775,20,12,,false
+166,TW,window 730 (r = 2812),15,759,15,6,3,725,21,,,false
+167,BB,borders from block 1 (of 3),61,3025,77,54,3,3024,22,12,,false
+168,J,job 12,12,597,12,3,3,588,23,,,false
+169,BB,borders from block 1 (of 3),60,2956,75,54,3,2947,24,12,,false
+170,M,machine 14,74,3629,139,52,3,3620,25,,,false
+171,BB,borders from block 1 (of 3),68,3371,89,52,3,3350,26,12,,false
+172,TW,window 684 (r = 2594),66,3259,69,11,3,3216,27,,,false
+173,BB,borders from block 1 (of 3),24,1207,28,28,3,1185,28,12,,false
+174,J,job 12,55,2727,57,3,3,2712,29,,,false
+175,BB,borders from block 1 (of 3),21,1049,24,24,3,1044,30,12,,false
+176,M,machine 14,78,3845,153,52,3,3819,31,,,false
+177,BB,borders from block 1 (of 3),15,760,16,16,3,744,32,12,,false
+178,TW,window 652 (r = 2467),33,1651,34,3,3,1639,33,,,false
+179,BB,borders from block 1 (of 3),43,2118,57,52,3,2113,34,12,,false
+180,J,job 11,20,1027,21,2,3,1023,35,,,false
+181,BB,borders from block 1 (of 3),15,767,16,16,3,744,36,12,,false
+182,M,machine 14,11,551,12,12,3,522,37,,,false
+183,BB,borders from block 1 (of 3),54,2651,73,52,3,2624,38,12,,false
+184,TW,window 171 (r = 630),63,3089,65,5,3,3061,39,,,true
+185,BB,borders from block 1 (of 5),25,1273,28,28,5,1273,0,18,,true
+186,J,job 11,63,3102,65,5,5,3075,0,,,true
+187,BB,borders from block 1 (of 7),27,1359,28,28,7,1327,0,25,,false
+188,M,machine 14,7,385,8,8,7,364,1,,,false
+189,BB,borders from block 1 (of 7),23,1169,24,24,7,1138,2,22,,false
+190,TW,window 58 (r = 204),30,1498,31,9,7,1497,3,,,false
+191,BB,borders from block 1 (of 7),66,3269,83,83,7,3254,4,25,,false
+192,J,job 12,10,519,10,1,2,490,5,,,false
+193,BB,borders from block 1 (of 2),11,559,12,12,2,557,6,8,,false
+194,M,machine 14,74,3632,140,53,2,3630,7,,,false
+195,BB,borders from block 1 (of 2),48,2379,63,53,2,2343,8,8,,false
+196,TW,window 713 (r = 2713),37,1842,38,6,2,1818,9,,,false
+197,BB,borders from block 1 (of 2),71,3489,90,53,2,3477,10,8,,false
+198,J,job 12,36,1794,37,1,2,1784,11,,,false
+199,BB,borders from block 1 (of 2),9,480,10,10,2,470,12,8,,false
+200,M,machine 14,6,324,7,7,2,322,13,,,false
+201,BB,borders from block 1 (of 2),56,2773,73,53,2,2764,14,8,,false
+202,TW,window 676 (r = 2567),74,3638,78,12,2,3619,15,,,false
+203,BB,borders from block 1 (of 2),72,3544,91,53,2,3525,16,8,,false
+204,J,job 12,18,929,19,1,2,927,17,,,false
+205,BB,borders from block 1 (of 2),69,3382,88,53,2,3379,18,8,,false
+206,M,machine 14,61,3023,113,53,2,3009,19,,,false
+207,TW,window 14 (r = 6),71,3495,74,6,2,3464,20,,,false
+208,TW,window 714 (r = 2720),36,1790,37,6,2,1770,21,,,false
+209,BB,borders from block 1 (of 2),33,1648,44,44,2,1645,22,8,,false
+210,J,job 12,27,1344,27,1,2,1311,23,,,false
+211,BB,borders from block 1 (of 2),40,1964,55,53,2,1963,24,8,,false
+212,M,machine 14,20,1014,28,28,2,994,25,,,false
+213,BB,borders from block 1 (of 2),47,2308,62,53,2,2294,26,8,,false
+214,TW,window 480 (r = 1826),19,977,20,2,2,974,27,,,false
+215,BB,borders from block 1 (of 2),28,1411,35,35,2,1406,28,8,,false
+216,J,job 12,80,3945,84,4,2,3921,29,,,false
+217,BB,borders from block 1 (of 2),18,909,20,20,2,881,30,8,,false
+218,M,machine 14,26,1322,52,36,2,1322,31,,,false
+219,BB,borders from block 1 (of 3),39,1946,46,46,3,1942,32,12,,false
+220,TW,window 681 (r = 2587),61,3002,63,12,3,2970,33,,,false
+221,BB,borders from block 1 (of 3),39,1937,45,45,3,1913,34,12,,false
+222,J,job 12,80,3962,84,7,3,3921,35,,,false
+223,BB,borders from block 1 (of 3),18,926,20,20,3,921,36,12,,false
+224,M,machine 14,33,1636,59,43,3,1630,37,,,false
+225,BB,borders from block 1 (of 3),13,643,13,13,3,615,38,12,,false
+226,TW,window 689 (r = 2612),53,2622,55,11,3,2600,39,,,false
+227,BB,borders from block 1 (of 3),37,1854,43,43,3,1834,40,12,,false
+228,J,job 12,59,2928,61,7,3,2895,41,,,true
+229,BB,borders from block 1 (of 9),15,754,16,16,9,744,0,16,,false
+230,M,machine 3,40,1972,68,44,9,1954,1,,,true
+231,BB,borders from block 1 (of 13),10,503,11,11,13,502,0,10,,false
+232,TW,window 236 (r = 895),16,808,16,3,13,780,1,,,false
+233,BB,borders from block 1 (of 13),28,1389,30,30,13,1387,2,30,,true
+234,J,job 12,16,784,16,1,4,783,0,,,false
+235,BB,borders from block 1 (of 4),54,2692,63,55,4,2650,1,16,,true
+236,M,machine 14,50,2478,100,52,9,2450,0,,,false
+237,BB,borders from block 1 (of 7),80,3948,98,73,7,3924,1,25,,true
+238,TW,window 196 (r = 744),16,800,16,2,4,782,0,,,false
+239,BB,borders from block 1 (of 4),17,843,17,17,4,801,1,14,,false
+240,J,job 12,27,1353,27,1,4,1311,2,,,false
+241,BB,borders from block 1 (of 4),52,2568,63,55,4,2567,3,14,,true
+242,M,machine 3,66,3254,120,52,2,3240,0,,,false
+243,BB,borders from block 1 (of 2),44,2194,58,54,2,2189,1,8,,false
+244,TW,window 22 (r = 55),61,2997,63,5,2,2972,2,,,false
+245,BB,borders from block 1 (of 2),25,1272,29,29,2,1265,3,8,,false
+246,J,job 12,21,1055,21,1,2,1023,4,,,false
+247,BB,borders from block 1 (of 2),80,3944,98,54,2,3931,5,8,,false
+248,M,machine 3,40,2004,69,45,2,1985,6,,,false
+249,BB,borders from block 1 (of 9),17,847,17,17,9,805,7,16,,false
+250,TW,window 65 (r = 237),6,325,6,3,9,293,8,,,false
+251,BB,borders from block 1 (of 9),64,3151,71,71,9,3140,9,30,,true
+252,J,job 12,66,3241,68,2,4,3210,0,,,false
+253,BB,borders from block 1 (of 4),11,564,11,11,4,522,1,10,,true
+254,M,machine 14,74,3631,140,68,7,3630,0,,,false
+255,BB,borders from block 1 (of 7),34,1712,37,37,7,1700,1,24,,true
+256,TW,window 704 (r = 2652),46,2262,47,16,9,2226,0,,,false
+257,BB,borders from block 1 (of 3),39,1938,52,52,3,1936,1,12,,true
+258,J,job 12,81,3976,85,13,8,3965,0,,,false
+259,BB,borders from block 1 (of 8),54,2656,60,60,8,2628,1,31,,false
+260,M,machine 14,60,2972,112,71,8,2972,2,,,false
+261,BB,borders from block 1 (of 6),70,3476,94,89,6,3441,3,23,,false

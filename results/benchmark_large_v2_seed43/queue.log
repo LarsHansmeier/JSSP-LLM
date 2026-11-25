@@ -1,0 +1,72 @@
+2026-11-25 09:26:03  queue started (pid 2364); julia: /Users/larshansmeier/.julia/juliaup/julia-1.13.4+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/bin/julia
+2026-11-25 09:26:03  STATUS: WAITING for running benchmark processes to end
+2026-11-25 09:26:03  v1_seed43 STATUS: DONE — 2026-11-25 06:20:15: 20 seed-43 runs complete and checked; see seed_comparison.md
+2026-11-25 09:26:03  no benchmark process running
+2026-11-25 09:26:03  STATUS: RUNNING — Part A: stall check and repair of benchmark_large_v2 (seed 42)
+2026-11-25 09:26:03  v2 (seed 42): stall check of all runs
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2: 28 runs scanned, 2 stalled; 113 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+          STALLED ta51__PolicyA_ScoreBased_fill: lost 139.8 s; 3 finding(s): sub_time 146.8 s > 10; gap 147.0 s since previous iteration > 10 | runtime 1333.3 s > 1210 | system sleep 2026-11-24 15:37:43–15:40:06 overlaps run (15:17:53–15:40:06), 143 s
+          STALLED ta72__PolicyB_StructureBased_v2: lost 888.9 s; 15 finding(s): setup_time 5.2 s > 5; gap 12.8 s since previous iteration > 10 | setup_time 51.8 s > 5; gap 52.3 s since previous iteration > 10 | sub_time 40.4 s > 10; gap 40.5 s since previous iteration > 10 | sub_time 64.0 s > 10; gap 64.0 s since previous iteration > 10 | sub_time 28.6 s > 10; gap 28.7 s since previous iteration > 10 | sub_time 183.6 s > 10; gap 183.6 s since previous iteration > 10 | …
+          moved ta51__PolicyA_ScoreBased_fill → runs_invalidated/ta51__PolicyA_ScoreBased_fill__20261125T092604
+          moved ta72__PolicyB_StructureBased_v2 → runs_invalidated/ta72__PolicyB_StructureBased_v2__20261125T092604
+        STALLED_RUNS=ta51__PolicyA_ScoreBased_fill,ta72__PolicyB_StructureBased_v2
+2026-11-25 09:26:04  v2 (seed 42): rerunning ta51__PolicyA_ScoreBased_fill,ta72__PolicyB_StructureBased_v2 (attempt 1) with its own restart mechanism
+2026-11-25 10:06:40  driver for benchmark_large_v2 exited with code 0; 28/28 runs DONE
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2: 2 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan_20261125T100641.csv, stall_runs_20261125T100641.csv
+        STALLED_RUNS=
+2026-11-25 10:06:41  v2 (seed 42): reruns are clean (ta51__PolicyA_ScoreBased_fill,ta72__PolicyB_StructureBased_v2)
+2026-11-25 10:06:41  Part A: re-aggregating benchmark_large_v2 and benchmark_large_combined
+        ta51__PolicyA_ScoreBased_fill__20261125T092604: old start 2026-11-24T15:17:53.430 incumbent 3307 → aggregated now: start 2026-11-25T09:26:21.443 incumbent 3307 → old values GONE
+        ta72__PolicyB_StructureBased_v2__20261125T092604: old start 2026-11-24T15:40:17.742 incumbent 5433 → aggregated now: start 2026-11-25T09:46:31.602 incumbent 5397 → old values GONE
+2026-11-25 10:06:56  Part A: final stall check of benchmark_large_v2
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2: 28 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 10:06:57  STATUS: RUNNING — Part A: stall check of benchmark_large_v1 and benchmark_large_v1_seed43
+2026-11-25 10:06:57  v1 (seed 42): stall check of all runs
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1: 20 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 10:06:57  v1 (seed 42): no stalled runs, nothing to repair
+2026-11-25 10:06:57  v1_seed43: stall check of all runs
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43: 20 runs scanned, 0 stalled; 108 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 10:06:58  v1_seed43: no stalled runs, nothing to repair
+2026-11-25 10:06:58  STATUS: RUNNING — Part B step 1: smoke test (ta31, 60 s per method, seed 43)
+2026-11-25 10:15:10  smoke driver exited with code 0
+2026-11-25 10:15:18  smoke check: CHECK OK: 7 runs, all DONE, feasible, run_check passed, free y in range, seed 43 everywhere
+2026-11-25 10:15:18  STATUS: RUNNING — Part B step 2: full v2 benchmark with seed 43 (28 runs); see /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/progress.csv
+== restarted after shutdown (booted 16:33) 2026-11-25 17:50:04
+2026-11-25 17:50:04  queue started (pid 1919); julia: /Users/larshansmeier/.julia/juliaup/julia-1.13.4+0.aarch64.apple.darwin14/Julia-1.13.app/Contents/Resources/julia/bin/julia
+2026-11-25 17:50:04  STATUS: WAITING for running benchmark processes to end
+2026-11-25 17:50:04  v1_seed43 STATUS: DONE — 2026-11-25 06:20:15: 20 seed-43 runs complete and checked; see seed_comparison.md
+2026-11-25 17:50:04  no benchmark process running
+2026-11-25 17:50:04  STATUS: RUNNING — Part A: stall check and repair of benchmark_large_v2 (seed 42)
+2026-11-25 17:50:04  v2 (seed 42): stall check of all runs
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2: 28 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 17:50:05  v2 (seed 42): no stalled runs, nothing to repair
+2026-11-25 17:50:05  Part A: re-aggregating benchmark_large_v2 and benchmark_large_combined
+2026-11-25 17:50:21  Part A: final stall check of benchmark_large_v2
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2: 28 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 17:50:21  STATUS: RUNNING — Part A: stall check of benchmark_large_v1 and benchmark_large_v1_seed43
+2026-11-25 17:50:21  v1 (seed 42): stall check of all runs
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1: 20 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 17:50:22  v1 (seed 42): no stalled runs, nothing to repair
+2026-11-25 17:50:22  v1_seed43: stall check of all runs
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43: 20 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 17:50:23  v1_seed43: no stalled runs, nothing to repair
+2026-11-25 17:50:23  STATUS: RUNNING — Part B step 1: smoke test (ta31, 60 s per method, seed 43)
+2026-11-25 17:50:38  smoke driver exited with code 0
+2026-11-25 17:50:46  smoke check: CHECK OK: 7 runs, all DONE, feasible, run_check passed, free y in range, seed 43 everywhere
+2026-11-25 17:50:46  STATUS: RUNNING — Part B step 2: full v2 benchmark with seed 43 (28 runs); see /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43/progress.csv
+2026-11-25 20:21:50  driver for benchmark_large_v2_seed43 exited with code 0; 28/28 runs DONE
+2026-11-25 20:21:50  aggregating v2 seed 43
+2026-11-25 20:22:11  full check: CHECK OK: 28 runs, all DONE, feasible, run_check passed, free y in range, seed 43 everywhere
+2026-11-25 20:22:11  final stall check of benchmark_large_v2_seed43
+        stall check /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_seed43: 28 runs scanned, 0 stalled; 89 system sleep intervals known (pmset); → stall_scan.csv, stall_runs.csv
+        STALLED_RUNS=
+2026-11-25 20:22:12  STATUS: RUNNING — Part B step 3: seed comparison and combined 2-seed tables
+2026-11-25 20:22:29  seed comparison exit 0, combined 2-seed exit 0
+2026-11-25 20:22:29  STATUS: DONE — 2026-11-25 20:22:29: v2 repaired (nothing to repair), v2 seed 43 complete and checked; see seed_comparison.md and results/benchmark_large_combined_2seeds

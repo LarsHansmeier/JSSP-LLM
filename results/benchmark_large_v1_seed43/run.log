@@ -1,0 +1,91 @@
+2026-11-24T23:36:30.421  ta41 random: started (attempt 1)
+2026-11-24T23:56:40.419  ta41 random: done
+2026-11-24T23:56:40.423  ta41 gurobi: started (attempt 1)
+2026-11-25T00:16:48.944  ta41 gurobi: done
+2026-11-25T00:16:48.945  ta41 PolicyA_ScoreBased_fill: started (attempt 1)
+2026-11-25T00:36:58.531  ta41 PolicyA_ScoreBased_fill: done
+2026-11-25T00:36:58.532  ta41 PolicyB_StructureBased_v2: started (attempt 1)
+2026-11-25T00:57:08.648  ta41 PolicyB_StructureBased_v2: done
+2026-11-25T00:57:08.649  ta41 PolicyC_Dynamic_v3: started (attempt 1)
+2026-11-25T01:17:19.858  ta41 PolicyC_Dynamic_v3: done
+2026-11-25T01:17:19.859  ta61 random: started (attempt 1)
+2026-11-25T01:37:29.452  ta61 random: done
+2026-11-25T01:37:29.452  ta61 gurobi: started (attempt 1)
+2026-11-25T01:57:37.817  ta61 gurobi: done
+2026-11-25T01:57:37.817  ta61 PolicyA_ScoreBased_fill: started (attempt 1)
+2026-11-25T02:17:47.411  ta61 PolicyA_ScoreBased_fill: done
+2026-11-25T02:17:47.412  ta61 PolicyB_StructureBased_v2: started (attempt 1)
+2026-11-25T02:37:57.621  ta61 PolicyB_StructureBased_v2: done
+2026-11-25T02:37:57.621  ta61 PolicyC_Dynamic_v3: started (attempt 1)
+2026-11-25T02:58:08.810  ta61 PolicyC_Dynamic_v3: done
+2026-11-25T02:58:08.810  swv12 random: started (attempt 1)
+2026-11-25T03:18:18.425  swv12 random: done
+2026-11-25T03:18:18.426  swv12 gurobi: started (attempt 1)
+2026-11-25T03:38:26.687  swv12 gurobi: done
+2026-11-25T03:38:26.687  swv12 PolicyA_ScoreBased_fill: started (attempt 1)
+2026-11-25T03:58:36.279  swv12 PolicyA_ScoreBased_fill: done
+2026-11-25T03:58:36.279  swv12 PolicyB_StructureBased_v2: started (attempt 1)
+2026-11-25T04:18:46.501  swv12 PolicyB_StructureBased_v2: done
+2026-11-25T04:18:46.501  swv12 PolicyC_Dynamic_v3: started (attempt 1)
+2026-11-25T04:38:57.659  swv12 PolicyC_Dynamic_v3: done
+2026-11-25T04:38:57.660  ta71 random: started (attempt 1)
+2026-11-25T04:59:07.287  ta71 random: done
+2026-11-25T04:59:07.287  ta71 gurobi: started (attempt 1)
+2026-11-25T05:19:15.899  ta71 gurobi: done
+2026-11-25T05:19:15.899  ta71 PolicyA_ScoreBased_fill: started (attempt 1)
+2026-11-25T05:39:25.501  ta71 PolicyA_ScoreBased_fill: done
+2026-11-25T05:39:25.502  ta71 PolicyB_StructureBased_v2: started (attempt 1)
+2026-11-25T05:59:35.537  ta71 PolicyB_StructureBased_v2: done
+2026-11-25T05:59:35.538  ta71 PolicyC_Dynamic_v3: started (attempt 1)
+2026-11-25T06:19:46.480  ta71 PolicyC_Dynamic_v3: done
+aggregated 20 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43
+20×7 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  runtime  feasible  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     Float64  Bool      String
+─────┼───────────────────────────────────────────────────────────────────────────────────────────
+   1 │ ta41       random                          2237   0.108523   1199.98      true  full
+   2 │ ta41       gurobi                          2358   0.168484   1200.0       true  full
+   3 │ ta41       PolicyA_ScoreBased_fill         2312   0.145689   1200.0       true  full
+   4 │ ta41       PolicyB_StructureBased_v2       2170   0.0753221  1199.98      true  full
+   5 │ ta41       PolicyC_Dynamic_v3              2235   0.107532   1200.0       true  full
+   6 │ ta61       random                          3037   0.0589261  1200.0       true  full
+   7 │ ta61       gurobi                          3195   0.114017   1200.01      true  full
+   8 │ ta61       PolicyA_ScoreBased_fill         3172   0.105997   1200.0       true  full
+   9 │ ta61       PolicyB_StructureBased_v2       2994   0.0439331  1200.0       true  full
+  10 │ ta61       PolicyC_Dynamic_v3              3000   0.0460251  1200.0       true  full
+  11 │ swv12      random                          3871   0.289044   1200.0       true  full
+  12 │ swv12      gurobi                          4215   0.403596   1200.0       true  full
+  13 │ swv12      PolicyA_ScoreBased_fill         3991   0.329004   1200.0       true  full
+  14 │ swv12      PolicyB_StructureBased_v2       3619   0.205128   1200.01      true  full
+  15 │ swv12      PolicyC_Dynamic_v3              3695   0.230436   1200.0       true  full
+  16 │ ta71       random                          5862   0.0728404  1200.02      true  full
+  17 │ ta71       gurobi                          6018   0.101391   1200.04      true  full
+  18 │ ta71       PolicyA_ScoreBased_fill         5991   0.0964495  1200.01      true  full
+  19 │ ta71       PolicyB_StructureBased_v2       5831   0.0671669  1200.01      true  full
+  20 │ ta71       PolicyC_Dynamic_v3              5797   0.0609444  1200.01      true  full
+aggregated 20 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43
+20×7 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  runtime  feasible  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     Float64  Bool      String
+─────┼───────────────────────────────────────────────────────────────────────────────────────────
+   1 │ ta41       random                          2237   0.108523   1199.98      true  full
+   2 │ ta41       gurobi                          2358   0.168484   1200.0       true  full
+   3 │ ta41       PolicyA_ScoreBased_fill         2312   0.145689   1200.0       true  full
+   4 │ ta41       PolicyB_StructureBased_v2       2170   0.0753221  1199.98      true  full
+   5 │ ta41       PolicyC_Dynamic_v3              2235   0.107532   1200.0       true  full
+   6 │ ta61       random                          3037   0.0589261  1200.0       true  full
+   7 │ ta61       gurobi                          3195   0.114017   1200.01      true  full
+   8 │ ta61       PolicyA_ScoreBased_fill         3172   0.105997   1200.0       true  full
+   9 │ ta61       PolicyB_StructureBased_v2       2994   0.0439331  1200.0       true  full
+  10 │ ta61       PolicyC_Dynamic_v3              3000   0.0460251  1200.0       true  full
+  11 │ swv12      random                          3871   0.289044   1200.0       true  full
+  12 │ swv12      gurobi                          4215   0.403596   1200.0       true  full
+  13 │ swv12      PolicyA_ScoreBased_fill         3991   0.329004   1200.0       true  full
+  14 │ swv12      PolicyB_StructureBased_v2       3619   0.205128   1200.01      true  full
+  15 │ swv12      PolicyC_Dynamic_v3              3695   0.230436   1200.0       true  full
+  16 │ ta71       random                          5862   0.0728404  1200.02      true  full
+  17 │ ta71       gurobi                          6018   0.101391   1200.04      true  full
+  18 │ ta71       PolicyA_ScoreBased_fill         5991   0.0964495  1200.01      true  full
+  19 │ ta71       PolicyB_StructureBased_v2       5831   0.0671669  1200.01      true  full
+  20 │ ta71       PolicyC_Dynamic_v3              5797   0.0609444  1200.01      true  full
+seed comparison → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v1_seed43/seed_comparison.csv / .md

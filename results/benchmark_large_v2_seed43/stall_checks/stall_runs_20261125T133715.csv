@@ -1,0 +1,2 @@
+instance,method,stalled,runtime,start,end,total_lost_s,sleep_overlap_s,reasons
+ta31,PolicyB_StructureBased_v2,False,1200.0,2026-11-25 13:17:13,2026-11-25 13:37:13,0.3,0.0,

@@ -1,0 +1,5 @@
+instance,method,start,finish,status
+ta21,random,2026-11-25T20:31:14.558,2026-11-25T20:51:25.393,done
+yn1,gurobi,2026-11-25T20:51:25.395,2026-11-25T21:11:34.486,done
+ta42,PolicyA_ScoreBased_fill,2026-11-25T21:11:34.487,2026-11-25T21:31:44.805,done
+ta62,PolicyB_StructureBased_v2,2026-11-25T21:31:44.805,"",running

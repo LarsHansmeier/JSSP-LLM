@@ -1,0 +1,49 @@
+exported swv11 (50×10, initial makespan 4257) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_smoke/input/swv11.json
+exported ta72 (100×20, initial makespan 5583) → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_smoke/input/ta72.json
+2026-11-24T14:20:19.799  swv11 random: started
+2026-11-24T14:21:30.148  swv11 random: done
+2026-11-24T14:21:30.152  ta72 gurobi: started
+2026-11-24T14:22:39.299  ta72 gurobi: done
+2026-11-24T14:22:39.300  swv11 gurobi: started
+2026-11-24T14:23:47.959  swv11 gurobi: done
+2026-11-24T14:23:47.959  ta72 PolicyA_ScoreBased_fill: started
+2026-11-24T14:24:57.611  ta72 PolicyA_ScoreBased_fill: done
+2026-11-24T14:24:57.612  swv11 PolicyA_ScoreBased_fill: started
+2026-11-24T14:26:07.502  swv11 PolicyA_ScoreBased_fill: done
+2026-11-24T14:26:07.503  ta72 PolicyB_StructureBased_v2: started
+2026-11-24T14:27:17.858  ta72 PolicyB_StructureBased_v2: done
+2026-11-24T14:27:17.858  swv11 PolicyB_StructureBased_v2: started
+2026-11-24T14:28:28.403  swv11 PolicyB_StructureBased_v2: done
+2026-11-24T14:28:28.403  ta72 PolicyC_Dynamic_v3: started
+2026-11-24T14:29:39.812  ta72 PolicyC_Dynamic_v3: done
+2026-11-24T14:29:39.812  swv11 PolicyC_Dynamic_v3: started
+2026-11-24T14:30:50.932  swv11 PolicyC_Dynamic_v3: done
+2026-11-24T14:30:50.933  ta72 random: started
+2026-11-24T14:32:00.988  ta72 random: done
+2026-11-24T14:32:00.989  swv11 CPSAT_1w: started
+2026-11-24T14:33:01.864  swv11 CPSAT_1w: done
+2026-11-24T14:33:01.864  ta72 CPSAT_1w: started
+2026-11-24T14:34:02.152  ta72 CPSAT_1w: done
+2026-11-24T14:34:02.153  swv11 CPSAT_8w: started
+2026-11-24T14:35:02.459  swv11 CPSAT_8w: done
+2026-11-24T14:35:02.460  ta72 CPSAT_8w: started
+2026-11-24T14:36:02.827  ta72 CPSAT_8w: done
+aggregated 14 runs → /Users/larshansmeier/Repos/OR Lab B/results/benchmark_large_v2_smoke
+14×9 DataFrame
+ Row │ instance   method                     incumbent  primal_gap  status      runtime  feasible  peak_rss_mb  run_check
+     │ DataStri…  DataStri…                  Int64      Float64     DataStri…   Float64  Bool      Float64      String
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ swv11      random                          4257   0.42327    TIME_LIMIT  60.0027      true       1067.2  full
+   2 │ swv11      gurobi                          4214   0.408893   TIME_LIMIT  60.0009      true       1352.3  full
+   3 │ swv11      PolicyA_ScoreBased_fill         4242   0.418255   TIME_LIMIT  60.0019      true       1244.6  full
+   4 │ swv11      PolicyB_StructureBased_v2       4061   0.35774    TIME_LIMIT  60.0013      true       1237.3  full
+   5 │ swv11      PolicyC_Dynamic_v3              4257   0.42327    TIME_LIMIT  60.0008      true       1287.5  full
+   6 │ swv11      CPSAT_1w                        3332   0.114009   FEASIBLE    60.0872      true        220.0  full
+   7 │ swv11      CPSAT_8w                        3100   0.0364427  FEASIBLE    60.0225      true        494.3  full
+   8 │ ta72       random                          5507   0.0629222  TIME_LIMIT  60.0126      true       1402.2  full
+   9 │ ta72       gurobi                          5583   0.0775912  TIME_LIMIT  60.1687      true       1580.0  full
+  10 │ ta72       PolicyA_ScoreBased_fill         5575   0.0760471  TIME_LIMIT  60.0089      true       1585.0  full
+  11 │ ta72       PolicyB_StructureBased_v2       5450   0.0519205  TIME_LIMIT  60.0233      true       1467.3  full
+  12 │ ta72       PolicyC_Dynamic_v3              5554   0.0719938  TIME_LIMIT  60.0094      true       1446.6  full
+  13 │ ta72       CPSAT_1w                        5581   0.0772052  FEASIBLE    60.0146      true        147.0  full
+  14 │ ta72       CPSAT_8w                        5398   0.0418838  FEASIBLE    60.0271      true        814.5  full

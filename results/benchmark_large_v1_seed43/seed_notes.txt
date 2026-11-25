@@ -1,0 +1,57 @@
+Seed-43 repeat of results/benchmark_large_v1 — seed notes (written 2026-11-24, before the run)
+=========================================================================================
+
+Where the seed is used (one parameter: --seed=43 of scripts/benchmark_seed.jl → SEED[])
+-------------------------------------------------------------------------------------
+In v1, scripts/benchmark_large.jl had one constant SEED = DEFAULT_SEED (= 42) that it passed to
+two functions. scripts/benchmark_seed.jl passes SEED[] (from --seed) to exactly the same two places:
+
+1. random_fao(...; seed)  (src/matheuristic.jl) – all fix-and-optimize methods
+   a) rng = MersenneTwister(seed):
+      - per-iteration budget draw n = rand(rng, n_free_min:n_free_max)
+      - rng is passed to the selector; only random_free uses it (shuffle(rng, operations)).
+        PolicyA (score based) is deterministic, PolicyB v2 and PolicyC v3 ignore rng.
+   b) seed → build_model(...; seed) for every sub-problem → Gurobi parameter Seed.
+2. solve_model(...; seed)  (src/model.jl → build_model) – method "gurobi": Gurobi parameter Seed
+   of the full model.
+
+Effect per method:
+   random    : budget draws + random release selection + Gurobi Seed of the sub-problems
+   A v2, B v2: budget draws (they fill up to the drawn budget) + Gurobi Seed of the sub-problems
+   C v3      : Gurobi Seed of the sub-problems only (it ignores rng and the drawn budget and
+               sets its own y_target; the draw still happens, its value is unused)
+   gurobi    : Gurobi Seed of the full model only
+
+There is no other RNG on these code paths. src/ is not changed: DEFAULT_SEED stays 42, and
+no policy file contains a seed. Policy D (src/hybrid.jl, own MersenneTwister) and the window
+neighbourhood (src/reference_neighborhoods.jl) have their own randomness, but they are not
+part of this benchmark. Every run records seed and gurobi_Seed (read back from the Gurobi model)
+in run.csv, and the queue's --check requires both to be 43.
+
+Does the initial solution depend on the seed?
+---------------------------------------------
+No. initial_schedule (MWKR, src/initial.jl) is deterministic (ties broken by job index) and
+uses no RNG. The dry run reproduces v1's initial makespans exactly:
+ta41 2620, ta61 3343, swv12 4327, ta71 6036.
+
+Other differences from v1
+-------------------------
+Settings: none. The dry run compared each instance with v1's runs.csv: same number of pairs,
+effective free-y range 250-4000 (cap 0.75·Y_tot), y_floor 250 for A v2 and B v2, sub-problem
+TimeLimit 7.5 s, Gurobi Threads 1, start solution, Big-M = initial makespan, reference values,
+20 min per run. Environment: Julia 1.13.4 and Gurobi 13.0.3 from the same project, on the same
+machine. Acceptance rule, loop, policies and run_check are unchanged.
+
+Unavoidable or deliberate differences, none of which changes the algorithm:
+- Run order: by instance (ta41, ta61, swv12, ta71), and within an instance in the v1 method
+  order, as requested. v1 interleaved instances and methods. Each run is still a separate Julia
+  process, one at a time.
+- Script: scripts/benchmark_seed.jl, a copy of the v1 worker and aggregation code from
+  scripts/benchmark_large.jl, with the seed as a parameter. The original was not edited, because
+  the v2 benchmark was using it at the time. The crash-safe driver is the one from
+  scripts/benchmark_large_v2.jl (runs/<inst>__<method>.tmp → check_schedule → rename → DONE,
+  at most 1 retry per run). Extra outputs per run: schedule.csv, and seed / gurobi_Seed in run.csv.
+- Plot titles of anytime_<instance>.png say "(seed 43)".
+- Time limits are wall-clock based, so the iterations a run completes depend on machine speed.
+  Even a repeat with seed 42 would not reproduce v1 bit for bit. The seed comparison therefore
+  measures seed variation plus timing noise.

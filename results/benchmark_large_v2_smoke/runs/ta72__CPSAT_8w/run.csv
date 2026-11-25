@@ -1,0 +1,2 @@
+instance,method,reference,initial,incumbent,primal_gap,bound,status,runtime,feasible,incumbents_checked,incumbents_infeasible,peak_rss_mb,threads,time_last_improvement,num_workers,cpsat_status,final_bound,build_time,makespan_julia,n_solutions
+ta72,CPSAT_8w,5181,5583,5398,0.0418838062150164,5181,FEASIBLE,60.02713605439759,true,1,0,814.5,8,59.894139054397584,8,FEASIBLE,5181,0.014085054397583008,5398,88
